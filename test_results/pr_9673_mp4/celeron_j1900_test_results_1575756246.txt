@@ -1,0 +1,452 @@
+Test with mp4 file
+model name	: Intel(R) Celeron(R) CPU  J1900  @ 1.99GHz
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm sse4_1 sse4_2 movbe popcnt tsc_deadline_timer rdrand lahf_lm 3dnowprefetch epb pti ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid tsc_adjust smep erms dtherm ida arat
+
+
+“results for off”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.28035 s, 245 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for lz4”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.10539 s, 255 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zle”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.3835 s, 239 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for lzjb”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 6.97115 s, 150 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for gzip”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 22.9153 s, 45.8 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for gzip-1”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 21.2414 s, 49.4 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for gzip-2”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 21.2819 s, 49.3 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for gzip-3”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 21.2878 s, 49.3 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for gzip-4”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 22.9096 s, 45.8 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for gzip-5”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 22.908 s, 45.8 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for gzip-6”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 22.9051 s, 45.8 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for gzip-7”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 22.9141 s, 45.8 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for gzip-8”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 22.9843 s, 45.6 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for gzip-9”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 22.9823 s, 45.6 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.94718 s, 212 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-1”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.49083 s, 233 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-2”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.57554 s, 229 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-3”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.96497 s, 211 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-4”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 6.42319 s, 163 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-5”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 11.9591 s, 87.7 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-6”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 12.6106 s, 83.2 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-7”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 12.588 s, 83.3 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-8”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 12.4901 s, 84.0 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-9”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 12.5191 s, 83.8 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-10”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 12.5561 s, 83.5 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-11”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 15.6032 s, 67.2 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-12”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 17.1073 s, 61.3 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-13”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 57.758 s, 18.2 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-14”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 107.098 s, 9.8 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-15”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 107.185 s, 9.8 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-16”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 112.241 s, 9.3 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-17”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 112.453 s, 9.3 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-18”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 112.687 s, 9.3 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-19”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 215.432 s, 4.9 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-fast”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.33018 s, 242 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-fast-1”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.28346 s, 245 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-fast-2”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.35379 s, 241 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-fast-3”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.21011 s, 249 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-fast-4”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.3084 s, 243 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-fast-5”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.31306 s, 243 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-fast-6”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.30356 s, 244 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-fast-7”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.41903 s, 237 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-fast-8”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.2981 s, 244 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-fast-9”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.37281 s, 240 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-fast-10”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.28136 s, 245 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-fast-20”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.32788 s, 242 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-fast-30”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.39301 s, 239 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-fast-40”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.38275 s, 239 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-fast-50”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.32187 s, 243 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-fast-60”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.30915 s, 243 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-fast-70”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.31868 s, 243 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-fast-80”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.37381 s, 240 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-fast-90”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.48605 s, 234 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-fast-100”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.47634 s, 234 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-fast-500”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.3746 s, 240 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK
+
+“results for zstd-fast-1000”
+250+0 records in
+250+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.36189 s, 240 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: bbb_sunflower_native_60fps_stereo_abl.mp4: OK

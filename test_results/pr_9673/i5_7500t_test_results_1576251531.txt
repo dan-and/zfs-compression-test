@@ -1,0 +1,448 @@
+
+“results for off”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 0.919277 s, 722 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: enwik9: OK
+
+“results for lz4”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 1.14465 s, 580 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.91x  -
+hashcheck result: enwik9: OK
+
+“results for zle”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 0.78634 s, 844 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: enwik9: OK
+
+“results for lzjb”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 1.70525 s, 389 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.45x  -
+hashcheck result: enwik9: OK
+
+“results for gzip”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 10.2265 s, 64.9 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.93x  -
+hashcheck result: enwik9: OK
+
+“results for gzip-1”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 3.65615 s, 181 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.54x  -
+hashcheck result: enwik9: OK
+
+“results for gzip-2”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 3.87342 s, 171 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.63x  -
+hashcheck result: enwik9: OK
+
+“results for gzip-3”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 4.78089 s, 139 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.70x  -
+hashcheck result: enwik9: OK
+
+“results for gzip-4”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 5.29085 s, 125 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.82x  -
+hashcheck result: enwik9: OK
+
+“results for gzip-5”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 7.46548 s, 88.9 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.90x  -
+hashcheck result: enwik9: OK
+
+“results for gzip-6”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 9.91072 s, 67.0 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.92x  -
+hashcheck result: enwik9: OK
+
+“results for gzip-7”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 11.0661 s, 60.0 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.93x  -
+hashcheck result: enwik9: OK
+
+“results for gzip-8”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 11.9703 s, 55.4 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.93x  -
+hashcheck result: enwik9: OK
+
+“results for gzip-9”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 12.194 s, 54.4 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.93x  -
+hashcheck result: enwik9: OK
+
+“results for zstd”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 2.11131 s, 314 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.85x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-1”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 1.53218 s, 433 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.68x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-2”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 1.67745 s, 396 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.77x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-3”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 2.15746 s, 308 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.85x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-4”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 2.21134 s, 300 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.84x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-5”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 3.33121 s, 199 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.92x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-6”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 4.92932 s, 135 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.00x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-7”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 5.72658 s, 116 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.03x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-8”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 7.28788 s, 91.0 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.04x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-9”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 8.8264 s, 75.2 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.05x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-10”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 10.6397 s, 62.4 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.05x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-11”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 14.9196 s, 44.5 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.06x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-12”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 16.7174 s, 39.7 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.07x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-13”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 23.4657 s, 28.3 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.08x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-14”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 30.9146 s, 21.5 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.12x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-15”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 33.0287 s, 20.1 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.13x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-16”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 43.8807 s, 15.1 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.14x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-17”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 46.2703 s, 14.3 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.14x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-18”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 48.0449 s, 13.8 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.14x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-19”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 92.3047 s, 7.2 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.15x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-fast”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 1.48124 s, 448 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.15x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-fast-1”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 1.35527 s, 490 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.15x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-fast-2”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 1.41227 s, 470 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.07x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-fast-3”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 1.27039 s, 522 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.98x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-fast-4”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 1.30841 s, 507 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.88x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-fast-5”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 1.18626 s, 559 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.79x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-fast-6”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 1.1652 s, 569 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.74x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-fast-7”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 1.09736 s, 605 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.69x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-fast-8”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 1.14097 s, 582 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.64x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-fast-9”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 1.03652 s, 640 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.60x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-fast-10”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 1.08388 s, 612 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.57x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-fast-20”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 0.932987 s, 711 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.34x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-fast-30”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 0.864889 s, 767 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.18x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-fast-40”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 0.836261 s, 793 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.13x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-fast-50”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 0.850518 s, 780 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.11x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-fast-60”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 0.985534 s, 673 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.09x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-fast-70”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 0.967872 s, 686 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.08x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-fast-80”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 0.982824 s, 675 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.07x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-fast-90”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 1.16882 s, 568 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.06x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-fast-100”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 0.928357 s, 715 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.05x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-fast-500”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 0.817506 s, 812 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: enwik9: OK
+
+“results for zstd-fast-1000”
+158+1 records in
+158+1 records out
+663552000 bytes (664 MB, 633 MiB) copied, 0.678383 s, 978 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+hashcheck result: enwik9: OK

@@ -1,0 +1,901 @@
+
+Test with enwik9 file
+model name	: QEMU Virtual CPU version 2.5+
+flags		: fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pse36 clflush mmx fxsr sse sse2 ht syscall nx lm rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt aes xsave hypervisor lahf_lm cpuid_fault invpcid_single pti ssbd ibrs ibpb invpcid md_clear
+
+“Compression results for off”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 4,69529 s, 213 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+
+“Decompression results for off”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 0,574719 s, 1,7 GB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for lz4”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,80387 s, 357 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.88x  -
+
+“Decompression results for lz4”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 1,72189 s, 581 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zle”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,48934 s, 402 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+
+“Decompression results for zle”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 0,539174 s, 1,9 GB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for lzjb”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 3,04703 s, 328 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.46x  -
+
+“Decompression results for lzjb”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 6,53288 s, 153 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for gzip”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 13,2835 s, 75,3 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.87x  -
+
+“Decompression results for gzip”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 6,61991 s, 151 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for gzip-1”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 6,01968 s, 166 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.50x  -
+
+“Decompression results for gzip-1”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 6,46319 s, 155 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for gzip-2”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 6,34441 s, 158 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.58x  -
+
+“Decompression results for gzip-2”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 6,45866 s, 155 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for gzip-3”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 7,69794 s, 130 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.65x  -
+
+“Decompression results for gzip-3”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 5,92002 s, 169 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for gzip-4”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 8,49585 s, 118 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.77x  -
+
+“Decompression results for gzip-4”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 6,72426 s, 149 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for gzip-5”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 10,8061 s, 92,5 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.84x  -
+
+“Decompression results for gzip-5”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 6,21844 s, 161 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for gzip-6”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 13,0912 s, 76,4 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.87x  -
+
+“Decompression results for gzip-6”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 6,15228 s, 163 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for gzip-7”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 14,7844 s, 67,6 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.87x  -
+
+“Decompression results for gzip-7”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 6,30419 s, 159 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for gzip-8”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 15,4895 s, 64,6 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.88x  -
+
+“Decompression results for gzip-8”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 5,99703 s, 167 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for gzip-9”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 15,4622 s, 64,7 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.88x  -
+
+“Decompression results for gzip-9”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 6,3034 s, 159 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 4,28939 s, 233 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.79x  -
+
+“Decompression results for zstd”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 3,15136 s, 317 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-1”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 3,30169 s, 303 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.62x  -
+
+“Decompression results for zstd-1”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,99367 s, 334 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-2”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 3,44535 s, 290 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.72x  -
+
+“Decompression results for zstd-2”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 3,26732 s, 306 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-3”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 4,24532 s, 236 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.79x  -
+
+“Decompression results for zstd-3”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 3,16765 s, 316 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-4”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 4,02985 s, 248 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.78x  -
+
+“Decompression results for zstd-4”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 3,59589 s, 278 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-5”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 5,70175 s, 175 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.86x  -
+
+“Decompression results for zstd-5”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 3,29553 s, 303 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-6”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 7,40288 s, 135 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.94x  -
+
+“Decompression results for zstd-6”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 4,13107 s, 242 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-7”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 8,99582 s, 111 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.97x  -
+
+“Decompression results for zstd-7”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 3,11558 s, 321 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-8”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 10,4913 s, 95,3 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.98x  -
+
+“Decompression results for zstd-8”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 3,00372 s, 333 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-9”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 12,6079 s, 79,3 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.99x  -
+
+“Decompression results for zstd-9”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,93262 s, 341 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-10”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 14,0042 s, 71,4 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.99x  -
+
+“Decompression results for zstd-10”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 3,0254 s, 331 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-11”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 19,8519 s, 50,4 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.00x  -
+
+“Decompression results for zstd-11”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 3,3813 s, 296 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-12”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 21,578 s, 46,3 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.00x  -
+
+“Decompression results for zstd-12”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,98024 s, 336 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-13”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 30,339 s, 33,0 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.02x  -
+
+“Decompression results for zstd-13”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 3,08386 s, 324 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-14”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 40,9066 s, 24,4 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.05x  -
+
+“Decompression results for zstd-14”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 3,19363 s, 313 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-15”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 42,6518 s, 23,4 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.07x  -
+
+“Decompression results for zstd-15”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 3,63146 s, 275 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-16”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 56,2736 s, 17,8 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.08x  -
+
+“Decompression results for zstd-16”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 3,26521 s, 306 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-17”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 60,5795 s, 16,5 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.08x  -
+
+“Decompression results for zstd-17”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 3,10132 s, 322 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-18”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 62,7965 s, 15,9 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.08x  -
+
+“Decompression results for zstd-18”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 3,43525 s, 291 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-19”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 118,015 s, 8,5 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.09x  -
+
+“Decompression results for zstd-19”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 3,70082 s, 270 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-fast”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 3,96512 s, 252 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.10x  -
+
+“Decompression results for zstd-fast”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,55356 s, 392 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-fast-1”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 3,18696 s, 314 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.10x  -
+
+“Decompression results for zstd-fast-1”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,49126 s, 401 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-fast-2”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 3,0837 s, 324 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.03x  -
+
+“Decompression results for zstd-fast-2”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,48892 s, 402 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-fast-3”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,939 s, 340 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.93x  -
+
+“Decompression results for zstd-fast-3”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,48034 s, 403 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-fast-4”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,96917 s, 337 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.84x  -
+
+“Decompression results for zstd-fast-4”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,52169 s, 397 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-fast-5”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,67005 s, 375 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.76x  -
+
+“Decompression results for zstd-fast-5”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,31796 s, 431 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-fast-6”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,75973 s, 362 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.70x  -
+
+“Decompression results for zstd-fast-6”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,2249 s, 449 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-fast-7”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,64943 s, 377 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.65x  -
+
+“Decompression results for zstd-fast-7”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,2442 s, 446 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-fast-8”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,6046 s, 384 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.61x  -
+
+“Decompression results for zstd-fast-8”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,09261 s, 478 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-fast-9”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,89841 s, 345 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.57x  -
+
+“Decompression results for zstd-fast-9”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,23948 s, 447 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-fast-10”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,68619 s, 372 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.53x  -
+
+“Decompression results for zstd-fast-10”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,07781 s, 481 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-fast-20”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,85764 s, 350 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.32x  -
+
+“Decompression results for zstd-fast-20”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 1,91537 s, 522 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-fast-30”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,68114 s, 373 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.17x  -
+
+“Decompression results for zstd-fast-30”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 1,3192 s, 758 MB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-fast-40”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,75858 s, 363 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.11x  -
+
+“Decompression results for zstd-fast-40”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 0,946396 s, 1,1 GB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-fast-50”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,42368 s, 413 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.09x  -
+
+“Decompression results for zstd-fast-50”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 0,833177 s, 1,2 GB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-fast-60”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,32851 s, 429 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.07x  -
+
+“Decompression results for zstd-fast-60”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 0,827432 s, 1,2 GB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-fast-70”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,35635 s, 424 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.06x  -
+
+“Decompression results for zstd-fast-70”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 0,686921 s, 1,5 GB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-fast-80”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,28088 s, 438 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.05x  -
+
+“Decompression results for zstd-fast-80”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 0,864389 s, 1,2 GB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-fast-90”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,44712 s, 409 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.04x  -
+
+“Decompression results for zstd-fast-90”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 0,837899 s, 1,2 GB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-fast-100”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,68968 s, 372 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.04x  -
+
+“Decompression results for zstd-fast-100”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 0,824187 s, 1,2 GB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-fast-500”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,48071 s, 403 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+
+“Decompression results for zstd-fast-500”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 0,519844 s, 1,9 GB/s
+
+hashcheck result: enwik9: OK
+
+----
+
+“Compression results for zstd-fast-1000”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 2,45297 s, 408 MB/s
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+
+“Decompression results for zstd-fast-1000”
+238+1 Datensätze ein
+238+1 Datensätze aus
+1000000000 Bytes (1,0 GB, 954 MiB) kopiert, 0,586661 s, 1,7 GB/s
+
+hashcheck result: enwik9: OK
+
+----
+

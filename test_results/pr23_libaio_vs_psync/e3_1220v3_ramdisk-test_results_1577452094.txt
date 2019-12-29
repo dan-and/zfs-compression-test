@@ -1,0 +1,2701 @@
+
+Test with enwik9 file
+model name	: Intel(R) Xeon(R) CPU E3-1220 v3 @ 3.10GHz
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt dtherm ida arat pln pts md_clear flush_l1d
+ZFS Storagepool-Device(s): /dev/shm/pooldisk.img
+
+
+“sequential Benchmark Results for off”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 0.720057 s, 1.4 GB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for off
+Speed:
+  MIXED: bw=1157MiB/s (1213MB/s), 1157MiB/s-1157MiB/s (1213MB/s-1213MB/s), io=1600MiB (1678MB), run=1383-1383msec
+
+Read (de)compression results for off
+Speed:
+  MIXED: bw=5246MiB/s (5501MB/s), 5246MiB/s-5246MiB/s (5501MB/s-5501MB/s), io=1600MiB (1678MB), run=305-305msec
+
+ReadWrite (de)compression results for off
+Speed:
+  MIXED: bw=873MiB/s (916MB/s), 873MiB/s-873MiB/s (916MB/s-916MB/s), io=1600MiB (1678MB), run=1832-1832msec
+
+
+----
+
+“sequential Benchmark Results for lz4”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 1.33208 s, 751 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.96x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for lz4
+Speed:
+  MIXED: bw=1282MiB/s (1344MB/s), 1282MiB/s-1282MiB/s (1344MB/s-1344MB/s), io=1600MiB (1678MB), run=1248-1248msec
+
+Read (de)compression results for lz4
+Speed:
+  MIXED: bw=3168MiB/s (3322MB/s), 3168MiB/s-3168MiB/s (3322MB/s-3322MB/s), io=1600MiB (1678MB), run=505-505msec
+
+ReadWrite (de)compression results for lz4
+Speed:
+  MIXED: bw=1648MiB/s (1728MB/s), 1648MiB/s-1648MiB/s (1728MB/s-1728MB/s), io=1600MiB (1678MB), run=971-971msec
+
+
+----
+
+“sequential Benchmark Results for zle”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 0.769967 s, 1.3 GB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zle
+Speed:
+  MIXED: bw=983MiB/s (1031MB/s), 983MiB/s-983MiB/s (1031MB/s-1031MB/s), io=1600MiB (1678MB), run=1628-1628msec
+
+Read (de)compression results for zle
+Speed:
+  MIXED: bw=5212MiB/s (5465MB/s), 5212MiB/s-5212MiB/s (5465MB/s-5465MB/s), io=1600MiB (1678MB), run=307-307msec
+
+ReadWrite (de)compression results for zle
+Speed:
+  MIXED: bw=709MiB/s (743MB/s), 709MiB/s-709MiB/s (743MB/s-743MB/s), io=1600MiB (1678MB), run=2257-2257msec
+
+
+----
+
+“sequential Benchmark Results for lzjb”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 1.97429 s, 507 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.49x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for lzjb
+Speed:
+  MIXED: bw=697MiB/s (731MB/s), 697MiB/s-697MiB/s (731MB/s-731MB/s), io=1600MiB (1678MB), run=2295-2295msec
+
+Read (de)compression results for lzjb
+Speed:
+  MIXED: bw=1631MiB/s (1710MB/s), 1631MiB/s-1631MiB/s (1710MB/s-1710MB/s), io=1600MiB (1678MB), run=981-981msec
+
+ReadWrite (de)compression results for lzjb
+Speed:
+  MIXED: bw=791MiB/s (829MB/s), 791MiB/s-791MiB/s (829MB/s-829MB/s), io=1600MiB (1678MB), run=2023-2023msec
+
+
+----
+
+“sequential Benchmark Results for gzip”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 14.1411 s, 70.7 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.06x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for gzip
+Speed:
+  MIXED: bw=119MiB/s (125MB/s), 119MiB/s-119MiB/s (125MB/s-125MB/s), io=1204MiB (1262MB), run=10074-10074msec
+
+Read (de)compression results for gzip
+Speed:
+  MIXED: bw=1022MiB/s (1071MB/s), 1022MiB/s-1022MiB/s (1071MB/s-1071MB/s), io=1600MiB (1678MB), run=1566-1566msec
+
+ReadWrite (de)compression results for gzip
+Speed:
+  MIXED: bw=180MiB/s (189MB/s), 180MiB/s-180MiB/s (189MB/s-189MB/s), io=1600MiB (1678MB), run=8881-8881msec
+
+
+----
+
+“sequential Benchmark Results for gzip-1”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 4.77389 s, 209 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.62x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for gzip-1
+Speed:
+  MIXED: bw=132MiB/s (138MB/s), 132MiB/s-132MiB/s (138MB/s-138MB/s), io=1334MiB (1399MB), run=10103-10103msec
+
+Read (de)compression results for gzip-1
+Speed:
+  MIXED: bw=1103MiB/s (1157MB/s), 1103MiB/s-1103MiB/s (1157MB/s-1157MB/s), io=1600MiB (1678MB), run=1450-1450msec
+
+ReadWrite (de)compression results for gzip-1
+Speed:
+  MIXED: bw=203MiB/s (213MB/s), 203MiB/s-203MiB/s (213MB/s-213MB/s), io=1600MiB (1678MB), run=7866-7866msec
+
+
+----
+
+“sequential Benchmark Results for gzip-2”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 5.29565 s, 189 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.72x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for gzip-2
+Speed:
+  MIXED: bw=132MiB/s (138MB/s), 132MiB/s-132MiB/s (138MB/s-138MB/s), io=1334MiB (1399MB), run=10107-10107msec
+
+Read (de)compression results for gzip-2
+Speed:
+  MIXED: bw=1071MiB/s (1123MB/s), 1071MiB/s-1071MiB/s (1123MB/s-1123MB/s), io=1600MiB (1678MB), run=1494-1494msec
+
+ReadWrite (de)compression results for gzip-2
+Speed:
+  MIXED: bw=202MiB/s (211MB/s), 202MiB/s-202MiB/s (211MB/s-211MB/s), io=1600MiB (1678MB), run=7934-7934msec
+
+
+----
+
+“sequential Benchmark Results for gzip-3”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 6.67532 s, 150 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.80x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for gzip-3
+Speed:
+  MIXED: bw=132MiB/s (139MB/s), 132MiB/s-132MiB/s (139MB/s-139MB/s), io=1348MiB (1414MB), run=10207-10207msec
+
+Read (de)compression results for gzip-3
+Speed:
+  MIXED: bw=1067MiB/s (1119MB/s), 1067MiB/s-1067MiB/s (1119MB/s-1119MB/s), io=1600MiB (1678MB), run=1499-1499msec
+
+ReadWrite (de)compression results for gzip-3
+Speed:
+  MIXED: bw=201MiB/s (211MB/s), 201MiB/s-201MiB/s (211MB/s-211MB/s), io=1600MiB (1678MB), run=7958-7958msec
+
+
+----
+
+“sequential Benchmark Results for gzip-4”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 7.49714 s, 133 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.93x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for gzip-4
+Speed:
+  MIXED: bw=118MiB/s (124MB/s), 118MiB/s-118MiB/s (124MB/s-124MB/s), io=1193MiB (1251MB), run=10131-10131msec
+
+Read (de)compression results for gzip-4
+Speed:
+  MIXED: bw=1040MiB/s (1090MB/s), 1040MiB/s-1040MiB/s (1090MB/s-1090MB/s), io=1600MiB (1678MB), run=1539-1539msec
+
+ReadWrite (de)compression results for gzip-4
+Speed:
+  MIXED: bw=181MiB/s (189MB/s), 181MiB/s-181MiB/s (189MB/s-189MB/s), io=1600MiB (1678MB), run=8862-8862msec
+
+
+----
+
+“sequential Benchmark Results for gzip-5”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 10.6648 s, 93.8 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.02x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for gzip-5
+Speed:
+  MIXED: bw=118MiB/s (124MB/s), 118MiB/s-118MiB/s (124MB/s-124MB/s), io=1185MiB (1242MB), run=10050-10050msec
+
+Read (de)compression results for gzip-5
+Speed:
+  MIXED: bw=1024MiB/s (1074MB/s), 1024MiB/s-1024MiB/s (1074MB/s-1074MB/s), io=1600MiB (1678MB), run=1562-1562msec
+
+ReadWrite (de)compression results for gzip-5
+Speed:
+  MIXED: bw=182MiB/s (191MB/s), 182MiB/s-182MiB/s (191MB/s-191MB/s), io=1600MiB (1678MB), run=8800-8800msec
+
+
+----
+
+“sequential Benchmark Results for gzip-6”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 14.3204 s, 69.8 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.06x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for gzip-6
+Speed:
+  MIXED: bw=119MiB/s (124MB/s), 119MiB/s-119MiB/s (124MB/s-124MB/s), io=1199MiB (1257MB), run=10112-10112msec
+
+Read (de)compression results for gzip-6
+Speed:
+  MIXED: bw=1026MiB/s (1076MB/s), 1026MiB/s-1026MiB/s (1076MB/s-1076MB/s), io=1600MiB (1678MB), run=1559-1559msec
+
+ReadWrite (de)compression results for gzip-6
+Speed:
+  MIXED: bw=180MiB/s (189MB/s), 180MiB/s-180MiB/s (189MB/s-189MB/s), io=1600MiB (1678MB), run=8896-8896msec
+
+
+----
+
+“sequential Benchmark Results for gzip-7”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 15.8812 s, 63.0 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.06x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for gzip-7
+Speed:
+  MIXED: bw=117MiB/s (123MB/s), 117MiB/s-117MiB/s (123MB/s-123MB/s), io=1178MiB (1235MB), run=10045-10045msec
+
+Read (de)compression results for gzip-7
+Speed:
+  MIXED: bw=1017MiB/s (1066MB/s), 1017MiB/s-1017MiB/s (1066MB/s-1066MB/s), io=1600MiB (1678MB), run=1574-1574msec
+
+ReadWrite (de)compression results for gzip-7
+Speed:
+  MIXED: bw=176MiB/s (185MB/s), 176MiB/s-176MiB/s (185MB/s-185MB/s), io=1600MiB (1678MB), run=9085-9085msec
+
+
+----
+
+“sequential Benchmark Results for gzip-8”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 17.5576 s, 57.0 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.07x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for gzip-8
+Speed:
+  MIXED: bw=118MiB/s (124MB/s), 118MiB/s-118MiB/s (124MB/s-124MB/s), io=1199MiB (1258MB), run=10121-10121msec
+
+Read (de)compression results for gzip-8
+Speed:
+  MIXED: bw=1031MiB/s (1081MB/s), 1031MiB/s-1031MiB/s (1081MB/s-1081MB/s), io=1600MiB (1678MB), run=1552-1552msec
+
+ReadWrite (de)compression results for gzip-8
+Speed:
+  MIXED: bw=179MiB/s (188MB/s), 179MiB/s-179MiB/s (188MB/s-188MB/s), io=1600MiB (1678MB), run=8922-8922msec
+
+
+----
+
+“sequential Benchmark Results for gzip-9”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 17.6386 s, 56.7 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.07x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for gzip-9
+Speed:
+  MIXED: bw=117MiB/s (123MB/s), 117MiB/s-117MiB/s (123MB/s-123MB/s), io=1198MiB (1257MB), run=10225-10225msec
+
+Read (de)compression results for gzip-9
+Speed:
+  MIXED: bw=984MiB/s (1032MB/s), 984MiB/s-984MiB/s (1032MB/s-1032MB/s), io=1600MiB (1678MB), run=1626-1626msec
+
+ReadWrite (de)compression results for gzip-9
+Speed:
+  MIXED: bw=175MiB/s (184MB/s), 175MiB/s-175MiB/s (184MB/s-184MB/s), io=1600MiB (1678MB), run=9133-9133msec
+
+
+----
+
+“sequential Benchmark Results for zstd”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.69299 s, 371 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.11x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd
+Speed:
+  MIXED: bw=1189MiB/s (1246MB/s), 1189MiB/s-1189MiB/s (1246MB/s-1246MB/s), io=1600MiB (1678MB), run=1346-1346msec
+
+Read (de)compression results for zstd
+Speed:
+  MIXED: bw=3721MiB/s (3902MB/s), 3721MiB/s-3721MiB/s (3902MB/s-3902MB/s), io=1600MiB (1678MB), run=430-430msec
+
+ReadWrite (de)compression results for zstd
+Speed:
+  MIXED: bw=1711MiB/s (1794MB/s), 1711MiB/s-1711MiB/s (1794MB/s-1794MB/s), io=1600MiB (1678MB), run=935-935msec
+
+
+----
+
+“sequential Benchmark Results for zstd-1”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 1.65067 s, 606 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.77x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-1
+Speed:
+  MIXED: bw=1247MiB/s (1308MB/s), 1247MiB/s-1247MiB/s (1308MB/s-1308MB/s), io=1600MiB (1678MB), run=1283-1283msec
+
+Read (de)compression results for zstd-1
+Speed:
+  MIXED: bw=3756MiB/s (3938MB/s), 3756MiB/s-3756MiB/s (3938MB/s-3938MB/s), io=1600MiB (1678MB), run=426-426msec
+
+ReadWrite (de)compression results for zstd-1
+Speed:
+  MIXED: bw=1896MiB/s (1988MB/s), 1896MiB/s-1896MiB/s (1988MB/s-1988MB/s), io=1600MiB (1678MB), run=844-844msec
+
+
+----
+
+“sequential Benchmark Results for zstd-2”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.11121 s, 474 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.98x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-2
+Speed:
+  MIXED: bw=1245MiB/s (1306MB/s), 1245MiB/s-1245MiB/s (1306MB/s-1306MB/s), io=1600MiB (1678MB), run=1285-1285msec
+
+Read (de)compression results for zstd-2
+Speed:
+  MIXED: bw=3865MiB/s (4052MB/s), 3865MiB/s-3865MiB/s (4052MB/s-4052MB/s), io=1600MiB (1678MB), run=414-414msec
+
+ReadWrite (de)compression results for zstd-2
+Speed:
+  MIXED: bw=1863MiB/s (1953MB/s), 1863MiB/s-1863MiB/s (1953MB/s-1953MB/s), io=1600MiB (1678MB), run=859-859msec
+
+
+----
+
+“sequential Benchmark Results for zstd-3”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.72943 s, 366 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.11x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-3
+Speed:
+  MIXED: bw=1149MiB/s (1205MB/s), 1149MiB/s-1149MiB/s (1205MB/s-1205MB/s), io=1600MiB (1678MB), run=1392-1392msec
+
+Read (de)compression results for zstd-3
+Speed:
+  MIXED: bw=3712MiB/s (3893MB/s), 3712MiB/s-3712MiB/s (3893MB/s-3893MB/s), io=1600MiB (1678MB), run=431-431msec
+
+ReadWrite (de)compression results for zstd-3
+Speed:
+  MIXED: bw=1796MiB/s (1883MB/s), 1796MiB/s-1796MiB/s (1883MB/s-1883MB/s), io=1600MiB (1678MB), run=891-891msec
+
+
+----
+
+“sequential Benchmark Results for zstd-4”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 3.51661 s, 284 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.14x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-4
+Speed:
+  MIXED: bw=1051MiB/s (1102MB/s), 1051MiB/s-1051MiB/s (1102MB/s-1102MB/s), io=1600MiB (1678MB), run=1523-1523msec
+
+Read (de)compression results for zstd-4
+Speed:
+  MIXED: bw=3756MiB/s (3938MB/s), 3756MiB/s-3756MiB/s (3938MB/s-3938MB/s), io=1600MiB (1678MB), run=426-426msec
+
+ReadWrite (de)compression results for zstd-4
+Speed:
+  MIXED: bw=1550MiB/s (1626MB/s), 1550MiB/s-1550MiB/s (1626MB/s-1626MB/s), io=1600MiB (1678MB), run=1032-1032msec
+
+
+----
+
+“sequential Benchmark Results for zstd-5”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 5.88763 s, 170 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.21x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-5
+Speed:
+  MIXED: bw=502MiB/s (526MB/s), 502MiB/s-502MiB/s (526MB/s-526MB/s), io=1600MiB (1678MB), run=3187-3187msec
+
+Read (de)compression results for zstd-5
+Speed:
+  MIXED: bw=3819MiB/s (4004MB/s), 3819MiB/s-3819MiB/s (4004MB/s-4004MB/s), io=1600MiB (1678MB), run=419-419msec
+
+ReadWrite (de)compression results for zstd-5
+Speed:
+  MIXED: bw=829MiB/s (869MB/s), 829MiB/s-829MiB/s (869MB/s-869MB/s), io=1600MiB (1678MB), run=1930-1930msec
+
+
+----
+
+“sequential Benchmark Results for zstd-6”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 8.31157 s, 120 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.26x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-6
+Speed:
+  MIXED: bw=440MiB/s (462MB/s), 440MiB/s-440MiB/s (462MB/s-462MB/s), io=1600MiB (1678MB), run=3635-3635msec
+
+Read (de)compression results for zstd-6
+Speed:
+  MIXED: bw=3765MiB/s (3948MB/s), 3765MiB/s-3765MiB/s (3948MB/s-3948MB/s), io=1600MiB (1678MB), run=425-425msec
+
+ReadWrite (de)compression results for zstd-6
+Speed:
+  MIXED: bw=755MiB/s (791MB/s), 755MiB/s-755MiB/s (791MB/s-791MB/s), io=1600MiB (1678MB), run=2120-2120msec
+
+
+----
+
+“sequential Benchmark Results for zstd-7”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 10.7256 s, 93.2 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.35x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-7
+Speed:
+  MIXED: bw=433MiB/s (454MB/s), 433MiB/s-433MiB/s (454MB/s-454MB/s), io=1600MiB (1678MB), run=3698-3698msec
+
+Read (de)compression results for zstd-7
+Speed:
+  MIXED: bw=3883MiB/s (4072MB/s), 3883MiB/s-3883MiB/s (4072MB/s-4072MB/s), io=1600MiB (1678MB), run=412-412msec
+
+ReadWrite (de)compression results for zstd-7
+Speed:
+  MIXED: bw=744MiB/s (780MB/s), 744MiB/s-744MiB/s (780MB/s-780MB/s), io=1600MiB (1678MB), run=2151-2151msec
+
+
+----
+
+“sequential Benchmark Results for zstd-8”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 12.4563 s, 80.3 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.40x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-8
+Speed:
+  MIXED: bw=444MiB/s (465MB/s), 444MiB/s-444MiB/s (465MB/s-465MB/s), io=1600MiB (1678MB), run=3606-3606msec
+
+Read (de)compression results for zstd-8
+Speed:
+  MIXED: bw=3721MiB/s (3902MB/s), 3721MiB/s-3721MiB/s (3902MB/s-3902MB/s), io=1600MiB (1678MB), run=430-430msec
+
+ReadWrite (de)compression results for zstd-8
+Speed:
+  MIXED: bw=739MiB/s (775MB/s), 739MiB/s-739MiB/s (775MB/s-775MB/s), io=1600MiB (1678MB), run=2166-2166msec
+
+
+----
+
+“sequential Benchmark Results for zstd-9”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 17.4498 s, 57.3 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.41x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-9
+Speed:
+  MIXED: bw=309MiB/s (324MB/s), 309MiB/s-309MiB/s (324MB/s-324MB/s), io=1600MiB (1678MB), run=5179-5179msec
+
+Read (de)compression results for zstd-9
+Speed:
+  MIXED: bw=3819MiB/s (4004MB/s), 3819MiB/s-3819MiB/s (4004MB/s-4004MB/s), io=1600MiB (1678MB), run=419-419msec
+
+ReadWrite (de)compression results for zstd-9
+Speed:
+  MIXED: bw=541MiB/s (567MB/s), 541MiB/s-541MiB/s (567MB/s-567MB/s), io=1600MiB (1678MB), run=2958-2958msec
+
+
+----
+
+“sequential Benchmark Results for zstd-10”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 20.6919 s, 48.3 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.42x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-10
+Speed:
+  MIXED: bw=230MiB/s (241MB/s), 230MiB/s-230MiB/s (241MB/s-241MB/s), io=1600MiB (1678MB), run=6951-6951msec
+
+Read (de)compression results for zstd-10
+Speed:
+  MIXED: bw=3774MiB/s (3957MB/s), 3774MiB/s-3774MiB/s (3957MB/s-3957MB/s), io=1600MiB (1678MB), run=424-424msec
+
+ReadWrite (de)compression results for zstd-10
+Speed:
+  MIXED: bw=384MiB/s (402MB/s), 384MiB/s-384MiB/s (402MB/s-402MB/s), io=1600MiB (1678MB), run=4170-4170msec
+
+
+----
+
+“sequential Benchmark Results for zstd-11”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 20.8369 s, 48.0 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.42x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-11
+Speed:
+  MIXED: bw=232MiB/s (244MB/s), 232MiB/s-232MiB/s (244MB/s-244MB/s), io=1600MiB (1678MB), run=6884-6884msec
+
+Read (de)compression results for zstd-11
+Speed:
+  MIXED: bw=3874MiB/s (4062MB/s), 3874MiB/s-3874MiB/s (4062MB/s-4062MB/s), io=1600MiB (1678MB), run=413-413msec
+
+ReadWrite (de)compression results for zstd-11
+Speed:
+  MIXED: bw=387MiB/s (406MB/s), 387MiB/s-387MiB/s (406MB/s-406MB/s), io=1600MiB (1678MB), run=4134-4134msec
+
+
+----
+
+“sequential Benchmark Results for zstd-12”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 27.4361 s, 36.4 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.43x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-12
+Speed:
+  MIXED: bw=228MiB/s (239MB/s), 228MiB/s-228MiB/s (239MB/s-239MB/s), io=1600MiB (1678MB), run=7014-7014msec
+
+Read (de)compression results for zstd-12
+Speed:
+  MIXED: bw=3810MiB/s (3995MB/s), 3810MiB/s-3810MiB/s (3995MB/s-3995MB/s), io=1600MiB (1678MB), run=420-420msec
+
+ReadWrite (de)compression results for zstd-12
+Speed:
+  MIXED: bw=387MiB/s (405MB/s), 387MiB/s-387MiB/s (405MB/s-405MB/s), io=1600MiB (1678MB), run=4139-4139msec
+
+
+----
+
+“sequential Benchmark Results for zstd-13”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 38.9261 s, 25.7 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.46x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-13
+Speed:
+  MIXED: bw=190MiB/s (199MB/s), 190MiB/s-190MiB/s (199MB/s-199MB/s), io=1600MiB (1678MB), run=8432-8432msec
+
+Read (de)compression results for zstd-13
+Speed:
+  MIXED: bw=3819MiB/s (4004MB/s), 3819MiB/s-3819MiB/s (4004MB/s-4004MB/s), io=1600MiB (1678MB), run=419-419msec
+
+ReadWrite (de)compression results for zstd-13
+Speed:
+  MIXED: bw=335MiB/s (352MB/s), 335MiB/s-335MiB/s (352MB/s-352MB/s), io=1600MiB (1678MB), run=4771-4771msec
+
+
+----
+
+“sequential Benchmark Results for zstd-14”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 38.9243 s, 25.7 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.46x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-14
+Speed:
+  MIXED: bw=187MiB/s (196MB/s), 187MiB/s-187MiB/s (196MB/s-196MB/s), io=1600MiB (1678MB), run=8561-8561msec
+
+Read (de)compression results for zstd-14
+Speed:
+  MIXED: bw=3756MiB/s (3938MB/s), 3756MiB/s-3756MiB/s (3938MB/s-3938MB/s), io=1600MiB (1678MB), run=426-426msec
+
+ReadWrite (de)compression results for zstd-14
+Speed:
+  MIXED: bw=332MiB/s (348MB/s), 332MiB/s-332MiB/s (348MB/s-348MB/s), io=1600MiB (1678MB), run=4820-4820msec
+
+
+----
+
+“sequential Benchmark Results for zstd-15”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 41.7367 s, 24.0 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.47x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-15
+Speed:
+  MIXED: bw=154MiB/s (161MB/s), 154MiB/s-154MiB/s (161MB/s-161MB/s), io=1563MiB (1638MB), run=10168-10168msec
+
+Read (de)compression results for zstd-15
+Speed:
+  MIXED: bw=3738MiB/s (3920MB/s), 3738MiB/s-3738MiB/s (3920MB/s-3920MB/s), io=1600MiB (1678MB), run=428-428msec
+
+ReadWrite (de)compression results for zstd-15
+Speed:
+  MIXED: bw=261MiB/s (273MB/s), 261MiB/s-261MiB/s (273MB/s-273MB/s), io=1600MiB (1678MB), run=6140-6140msec
+
+
+----
+
+“sequential Benchmark Results for zstd-16”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 61.5745 s, 16.2 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.58x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-16
+Speed:
+  MIXED: bw=104MiB/s (109MB/s), 104MiB/s-104MiB/s (109MB/s-109MB/s), io=1046MiB (1097MB), run=10074-10074msec
+
+Read (de)compression results for zstd-16
+Speed:
+  MIXED: bw=3883MiB/s (4072MB/s), 3883MiB/s-3883MiB/s (4072MB/s-4072MB/s), io=1600MiB (1678MB), run=412-412msec
+
+ReadWrite (de)compression results for zstd-16
+Speed:
+  MIXED: bw=186MiB/s (195MB/s), 186MiB/s-186MiB/s (195MB/s-195MB/s), io=1600MiB (1678MB), run=8600-8600msec
+
+
+----
+
+“sequential Benchmark Results for zstd-17”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 70.4938 s, 14.2 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.62x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-17
+Speed:
+  MIXED: bw=105MiB/s (110MB/s), 105MiB/s-105MiB/s (110MB/s-110MB/s), io=1057MiB (1108MB), run=10059-10059msec
+
+Read (de)compression results for zstd-17
+Speed:
+  MIXED: bw=3837MiB/s (4023MB/s), 3837MiB/s-3837MiB/s (4023MB/s-4023MB/s), io=1600MiB (1678MB), run=417-417msec
+
+ReadWrite (de)compression results for zstd-17
+Speed:
+  MIXED: bw=179MiB/s (188MB/s), 179MiB/s-179MiB/s (188MB/s-188MB/s), io=1600MiB (1678MB), run=8942-8942msec
+
+
+----
+
+“sequential Benchmark Results for zstd-18”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 92.0307 s, 10.9 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.63x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-18
+Speed:
+  MIXED: bw=65.4MiB/s (68.6MB/s), 65.4MiB/s-65.4MiB/s (68.6MB/s-68.6MB/s), io=675MiB (708MB), run=10322-10322msec
+
+Read (de)compression results for zstd-18
+Speed:
+  MIXED: bw=3810MiB/s (3995MB/s), 3810MiB/s-3810MiB/s (3995MB/s-3995MB/s), io=1600MiB (1678MB), run=420-420msec
+
+ReadWrite (de)compression results for zstd-18
+Speed:
+  MIXED: bw=114MiB/s (119MB/s), 114MiB/s-114MiB/s (119MB/s-119MB/s), io=1146MiB (1201MB), run=10091-10091msec
+
+
+----
+
+“sequential Benchmark Results for zstd-19”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 111.496 s, 9.0 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  3.64x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-19
+Speed:
+  MIXED: bw=60.2MiB/s (63.2MB/s), 60.2MiB/s-60.2MiB/s (63.2MB/s-63.2MB/s), io=624MiB (654MB), run=10351-10351msec
+
+Read (de)compression results for zstd-19
+Speed:
+  MIXED: bw=3893MiB/s (4082MB/s), 3893MiB/s-3893MiB/s (4082MB/s-4082MB/s), io=1600MiB (1678MB), run=411-411msec
+
+ReadWrite (de)compression results for zstd-19
+Speed:
+  MIXED: bw=105MiB/s (110MB/s), 105MiB/s-105MiB/s (110MB/s-110MB/s), io=1074MiB (1126MB), run=10193-10193msec
+
+
+----
+
+“sequential Benchmark Results for zstd-fast”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 1.51533 s, 660 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.19x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast
+Speed:
+  MIXED: bw=1490MiB/s (1562MB/s), 1490MiB/s-1490MiB/s (1562MB/s-1562MB/s), io=1600MiB (1678MB), run=1074-1074msec
+
+Read (de)compression results for zstd-fast
+Speed:
+  MIXED: bw=3791MiB/s (3976MB/s), 3791MiB/s-3791MiB/s (3976MB/s-3976MB/s), io=1600MiB (1678MB), run=422-422msec
+
+ReadWrite (de)compression results for zstd-fast
+Speed:
+  MIXED: bw=2168MiB/s (2273MB/s), 2168MiB/s-2168MiB/s (2273MB/s-2273MB/s), io=1600MiB (1678MB), run=738-738msec
+
+
+----
+
+“sequential Benchmark Results for zstd-fast-1”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 1.51912 s, 658 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.19x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-1
+Speed:
+  MIXED: bw=1391MiB/s (1459MB/s), 1391MiB/s-1391MiB/s (1459MB/s-1459MB/s), io=1600MiB (1678MB), run=1150-1150msec
+
+Read (de)compression results for zstd-fast-1
+Speed:
+  MIXED: bw=3922MiB/s (4112MB/s), 3922MiB/s-3922MiB/s (4112MB/s-4112MB/s), io=1600MiB (1678MB), run=408-408msec
+
+ReadWrite (de)compression results for zstd-fast-1
+Speed:
+  MIXED: bw=2244MiB/s (2353MB/s), 2244MiB/s-2244MiB/s (2353MB/s-2353MB/s), io=1600MiB (1678MB), run=713-713msec
+
+
+----
+
+“sequential Benchmark Results for zstd-fast-2”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 1.50563 s, 664 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.10x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-2
+Speed:
+  MIXED: bw=1357MiB/s (1423MB/s), 1357MiB/s-1357MiB/s (1423MB/s-1423MB/s), io=1600MiB (1678MB), run=1179-1179msec
+
+Read (de)compression results for zstd-fast-2
+Speed:
+  MIXED: bw=3828MiB/s (4014MB/s), 3828MiB/s-3828MiB/s (4014MB/s-4014MB/s), io=1600MiB (1678MB), run=418-418msec
+
+ReadWrite (de)compression results for zstd-fast-2
+Speed:
+  MIXED: bw=2228MiB/s (2337MB/s), 2228MiB/s-2228MiB/s (2337MB/s-2337MB/s), io=1600MiB (1678MB), run=718-718msec
+
+
+----
+
+“sequential Benchmark Results for zstd-fast-3”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 1.41764 s, 705 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  2.00x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-3
+Speed:
+  MIXED: bw=1346MiB/s (1411MB/s), 1346MiB/s-1346MiB/s (1411MB/s-1411MB/s), io=1600MiB (1678MB), run=1189-1189msec
+
+Read (de)compression results for zstd-fast-3
+Speed:
+  MIXED: bw=3756MiB/s (3938MB/s), 3756MiB/s-3756MiB/s (3938MB/s-3938MB/s), io=1600MiB (1678MB), run=426-426msec
+
+ReadWrite (de)compression results for zstd-fast-3
+Speed:
+  MIXED: bw=2198MiB/s (2305MB/s), 2198MiB/s-2198MiB/s (2305MB/s-2305MB/s), io=1600MiB (1678MB), run=728-728msec
+
+
+----
+
+“sequential Benchmark Results for zstd-fast-4”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 1.35446 s, 738 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.91x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-4
+Speed:
+  MIXED: bw=1524MiB/s (1598MB/s), 1524MiB/s-1524MiB/s (1598MB/s-1598MB/s), io=1600MiB (1678MB), run=1050-1050msec
+
+Read (de)compression results for zstd-fast-4
+Speed:
+  MIXED: bw=3687MiB/s (3866MB/s), 3687MiB/s-3687MiB/s (3866MB/s-3866MB/s), io=1600MiB (1678MB), run=434-434msec
+
+ReadWrite (de)compression results for zstd-fast-4
+Speed:
+  MIXED: bw=2286MiB/s (2397MB/s), 2286MiB/s-2286MiB/s (2397MB/s-2397MB/s), io=1600MiB (1678MB), run=700-700msec
+
+
+----
+
+“sequential Benchmark Results for zstd-fast-5”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 1.2824 s, 780 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.82x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-5
+Speed:
+  MIXED: bw=1504MiB/s (1577MB/s), 1504MiB/s-1504MiB/s (1577MB/s-1577MB/s), io=1600MiB (1678MB), run=1064-1064msec
+
+Read (de)compression results for zstd-fast-5
+Speed:
+  MIXED: bw=3695MiB/s (3875MB/s), 3695MiB/s-3695MiB/s (3875MB/s-3875MB/s), io=1600MiB (1678MB), run=433-433msec
+
+ReadWrite (de)compression results for zstd-fast-5
+Speed:
+  MIXED: bw=2213MiB/s (2321MB/s), 2213MiB/s-2213MiB/s (2321MB/s-2321MB/s), io=1600MiB (1678MB), run=723-723msec
+
+
+----
+
+“sequential Benchmark Results for zstd-fast-6”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 1.23647 s, 809 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.75x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-6
+Speed:
+  MIXED: bw=1460MiB/s (1531MB/s), 1460MiB/s-1460MiB/s (1531MB/s-1531MB/s), io=1600MiB (1678MB), run=1096-1096msec
+
+Read (de)compression results for zstd-fast-6
+Speed:
+  MIXED: bw=3774MiB/s (3957MB/s), 3774MiB/s-3774MiB/s (3957MB/s-3957MB/s), io=1600MiB (1678MB), run=424-424msec
+
+ReadWrite (de)compression results for zstd-fast-6
+Speed:
+  MIXED: bw=2201MiB/s (2308MB/s), 2201MiB/s-2201MiB/s (2308MB/s-2308MB/s), io=1600MiB (1678MB), run=727-727msec
+
+
+----
+
+“sequential Benchmark Results for zstd-fast-7”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 1.1775 s, 849 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.70x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-7
+Speed:
+  MIXED: bw=1518MiB/s (1592MB/s), 1518MiB/s-1518MiB/s (1592MB/s-1592MB/s), io=1600MiB (1678MB), run=1054-1054msec
+
+Read (de)compression results for zstd-fast-7
+Speed:
+  MIXED: bw=3747MiB/s (3929MB/s), 3747MiB/s-3747MiB/s (3929MB/s-3929MB/s), io=1600MiB (1678MB), run=427-427msec
+
+ReadWrite (de)compression results for zstd-fast-7
+Speed:
+  MIXED: bw=2222MiB/s (2330MB/s), 2222MiB/s-2222MiB/s (2330MB/s-2330MB/s), io=1600MiB (1678MB), run=720-720msec
+
+
+----
+
+“sequential Benchmark Results for zstd-fast-8”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 1.14217 s, 876 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.66x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-8
+Speed:
+  MIXED: bw=1396MiB/s (1464MB/s), 1396MiB/s-1396MiB/s (1464MB/s-1464MB/s), io=1600MiB (1678MB), run=1146-1146msec
+
+Read (de)compression results for zstd-fast-8
+Speed:
+  MIXED: bw=3828MiB/s (4014MB/s), 3828MiB/s-3828MiB/s (4014MB/s-4014MB/s), io=1600MiB (1678MB), run=418-418msec
+
+ReadWrite (de)compression results for zstd-fast-8
+Speed:
+  MIXED: bw=2210MiB/s (2317MB/s), 2210MiB/s-2210MiB/s (2317MB/s-2317MB/s), io=1600MiB (1678MB), run=724-724msec
+
+
+----
+
+“sequential Benchmark Results for zstd-fast-9”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 1.12026 s, 893 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.62x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-9
+Speed:
+  MIXED: bw=1497MiB/s (1569MB/s), 1497MiB/s-1497MiB/s (1569MB/s-1569MB/s), io=1600MiB (1678MB), run=1069-1069msec
+
+Read (de)compression results for zstd-fast-9
+Speed:
+  MIXED: bw=3747MiB/s (3929MB/s), 3747MiB/s-3747MiB/s (3929MB/s-3929MB/s), io=1600MiB (1678MB), run=427-427msec
+
+ReadWrite (de)compression results for zstd-fast-9
+Speed:
+  MIXED: bw=2225MiB/s (2333MB/s), 2225MiB/s-2225MiB/s (2333MB/s-2333MB/s), io=1600MiB (1678MB), run=719-719msec
+
+
+----
+
+“sequential Benchmark Results for zstd-fast-10”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 1.07316 s, 932 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.59x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-10
+Speed:
+  MIXED: bw=1487MiB/s (1559MB/s), 1487MiB/s-1487MiB/s (1559MB/s-1559MB/s), io=1600MiB (1678MB), run=1076-1076msec
+
+Read (de)compression results for zstd-fast-10
+Speed:
+  MIXED: bw=3800MiB/s (3985MB/s), 3800MiB/s-3800MiB/s (3985MB/s-3985MB/s), io=1600MiB (1678MB), run=421-421msec
+
+ReadWrite (de)compression results for zstd-fast-10
+Speed:
+  MIXED: bw=2222MiB/s (2330MB/s), 2222MiB/s-2222MiB/s (2330MB/s-2330MB/s), io=1600MiB (1678MB), run=720-720msec
+
+
+----
+
+“sequential Benchmark Results for zstd-fast-20”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 0.971833 s, 1.0 GB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.37x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-20
+Speed:
+  MIXED: bw=1364MiB/s (1430MB/s), 1364MiB/s-1364MiB/s (1430MB/s-1430MB/s), io=1600MiB (1678MB), run=1173-1173msec
+
+Read (de)compression results for zstd-fast-20
+Speed:
+  MIXED: bw=3765MiB/s (3948MB/s), 3765MiB/s-3765MiB/s (3948MB/s-3948MB/s), io=1600MiB (1678MB), run=425-425msec
+
+ReadWrite (de)compression results for zstd-fast-20
+Speed:
+  MIXED: bw=2198MiB/s (2305MB/s), 2198MiB/s-2198MiB/s (2305MB/s-2305MB/s), io=1600MiB (1678MB), run=728-728msec
+
+
+----
+
+“sequential Benchmark Results for zstd-fast-30”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 0.851227 s, 1.2 GB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.25x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-30
+Speed:
+  MIXED: bw=1386MiB/s (1454MB/s), 1386MiB/s-1386MiB/s (1454MB/s-1454MB/s), io=1600MiB (1678MB), run=1154-1154msec
+
+Read (de)compression results for zstd-fast-30
+Speed:
+  MIXED: bw=3747MiB/s (3929MB/s), 3747MiB/s-3747MiB/s (3929MB/s-3929MB/s), io=1600MiB (1678MB), run=427-427msec
+
+ReadWrite (de)compression results for zstd-fast-30
+Speed:
+  MIXED: bw=2244MiB/s (2353MB/s), 2244MiB/s-2244MiB/s (2353MB/s-2353MB/s), io=1600MiB (1678MB), run=713-713msec
+
+
+----
+
+“sequential Benchmark Results for zstd-fast-40”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 0.819677 s, 1.2 GB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.15x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-40
+Speed:
+  MIXED: bw=1475MiB/s (1546MB/s), 1475MiB/s-1475MiB/s (1546MB/s-1546MB/s), io=1600MiB (1678MB), run=1085-1085msec
+
+Read (de)compression results for zstd-fast-40
+Speed:
+  MIXED: bw=3791MiB/s (3976MB/s), 3791MiB/s-3791MiB/s (3976MB/s-3976MB/s), io=1600MiB (1678MB), run=422-422msec
+
+ReadWrite (de)compression results for zstd-fast-40
+Speed:
+  MIXED: bw=2189MiB/s (2295MB/s), 2189MiB/s-2189MiB/s (2295MB/s-2295MB/s), io=1600MiB (1678MB), run=731-731msec
+
+
+----
+
+“sequential Benchmark Results for zstd-fast-50”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 0.784494 s, 1.3 GB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.12x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-50
+Speed:
+  MIXED: bw=1518MiB/s (1592MB/s), 1518MiB/s-1518MiB/s (1592MB/s-1592MB/s), io=1600MiB (1678MB), run=1054-1054msec
+
+Read (de)compression results for zstd-fast-50
+Speed:
+  MIXED: bw=3756MiB/s (3938MB/s), 3756MiB/s-3756MiB/s (3938MB/s-3938MB/s), io=1600MiB (1678MB), run=426-426msec
+
+ReadWrite (de)compression results for zstd-fast-50
+Speed:
+  MIXED: bw=2122MiB/s (2225MB/s), 2122MiB/s-2122MiB/s (2225MB/s-2225MB/s), io=1600MiB (1678MB), run=754-754msec
+
+
+----
+
+“sequential Benchmark Results for zstd-fast-60”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 0.766006 s, 1.3 GB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.10x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-60
+Speed:
+  MIXED: bw=1514MiB/s (1587MB/s), 1514MiB/s-1514MiB/s (1587MB/s-1587MB/s), io=1600MiB (1678MB), run=1057-1057msec
+
+Read (de)compression results for zstd-fast-60
+Speed:
+  MIXED: bw=3855MiB/s (4043MB/s), 3855MiB/s-3855MiB/s (4043MB/s-4043MB/s), io=1600MiB (1678MB), run=415-415msec
+
+ReadWrite (de)compression results for zstd-fast-60
+Speed:
+  MIXED: bw=2142MiB/s (2246MB/s), 2142MiB/s-2142MiB/s (2246MB/s-2246MB/s), io=1600MiB (1678MB), run=747-747msec
+
+
+----
+
+“sequential Benchmark Results for zstd-fast-70”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 0.777286 s, 1.3 GB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.08x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-70
+Speed:
+  MIXED: bw=1399MiB/s (1467MB/s), 1399MiB/s-1399MiB/s (1467MB/s-1467MB/s), io=1600MiB (1678MB), run=1144-1144msec
+
+Read (de)compression results for zstd-fast-70
+Speed:
+  MIXED: bw=3774MiB/s (3957MB/s), 3774MiB/s-3774MiB/s (3957MB/s-3957MB/s), io=1600MiB (1678MB), run=424-424msec
+
+ReadWrite (de)compression results for zstd-fast-70
+Speed:
+  MIXED: bw=2142MiB/s (2246MB/s), 2142MiB/s-2142MiB/s (2246MB/s-2246MB/s), io=1600MiB (1678MB), run=747-747msec
+
+
+----
+
+“sequential Benchmark Results for zstd-fast-80”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 0.748527 s, 1.3 GB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.07x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-80
+Speed:
+  MIXED: bw=1383MiB/s (1450MB/s), 1383MiB/s-1383MiB/s (1450MB/s-1450MB/s), io=1600MiB (1678MB), run=1157-1157msec
+
+Read (de)compression results for zstd-fast-80
+Speed:
+  MIXED: bw=3774MiB/s (3957MB/s), 3774MiB/s-3774MiB/s (3957MB/s-3957MB/s), io=1600MiB (1678MB), run=424-424msec
+
+ReadWrite (de)compression results for zstd-fast-80
+Speed:
+  MIXED: bw=2139MiB/s (2243MB/s), 2139MiB/s-2139MiB/s (2243MB/s-2243MB/s), io=1600MiB (1678MB), run=748-748msec
+
+
+----
+
+“sequential Benchmark Results for zstd-fast-90”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 0.740322 s, 1.4 GB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.07x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-90
+Speed:
+  MIXED: bw=1502MiB/s (1575MB/s), 1502MiB/s-1502MiB/s (1575MB/s-1575MB/s), io=1600MiB (1678MB), run=1065-1065msec
+
+Read (de)compression results for zstd-fast-90
+Speed:
+  MIXED: bw=3874MiB/s (4062MB/s), 3874MiB/s-3874MiB/s (4062MB/s-4062MB/s), io=1600MiB (1678MB), run=413-413msec
+
+ReadWrite (de)compression results for zstd-fast-90
+Speed:
+  MIXED: bw=2130MiB/s (2234MB/s), 2130MiB/s-2130MiB/s (2234MB/s-2234MB/s), io=1600MiB (1678MB), run=751-751msec
+
+
+----
+
+“sequential Benchmark Results for zstd-fast-100”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 0.72305 s, 1.4 GB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.06x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-100
+Speed:
+  MIXED: bw=1490MiB/s (1562MB/s), 1490MiB/s-1490MiB/s (1562MB/s-1562MB/s), io=1600MiB (1678MB), run=1074-1074msec
+
+Read (de)compression results for zstd-fast-100
+Speed:
+  MIXED: bw=3791MiB/s (3976MB/s), 3791MiB/s-3791MiB/s (3976MB/s-3976MB/s), io=1600MiB (1678MB), run=422-422msec
+
+ReadWrite (de)compression results for zstd-fast-100
+Speed:
+  MIXED: bw=2151MiB/s (2255MB/s), 2151MiB/s-2151MiB/s (2255MB/s-2255MB/s), io=1600MiB (1678MB), run=744-744msec
+
+
+----
+
+“sequential Benchmark Results for zstd-fast-500”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 0.731029 s, 1.4 GB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-500
+Speed:
+  MIXED: bw=1511MiB/s (1584MB/s), 1511MiB/s-1511MiB/s (1584MB/s-1584MB/s), io=1600MiB (1678MB), run=1059-1059msec
+
+Read (de)compression results for zstd-fast-500
+Speed:
+  MIXED: bw=3791MiB/s (3976MB/s), 3791MiB/s-3791MiB/s (3976MB/s-3976MB/s), io=1600MiB (1678MB), run=422-422msec
+
+ReadWrite (de)compression results for zstd-fast-500
+Speed:
+  MIXED: bw=2180MiB/s (2286MB/s), 2180MiB/s-2180MiB/s (2286MB/s-2286MB/s), io=1600MiB (1678MB), run=734-734msec
+
+
+----
+
+“sequential Benchmark Results for zstd-fast-1000”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 0.741033 s, 1.3 GB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-1000
+Speed:
+  MIXED: bw=1479MiB/s (1551MB/s), 1479MiB/s-1479MiB/s (1551MB/s-1551MB/s), io=1600MiB (1678MB), run=1082-1082msec
+
+Read (de)compression results for zstd-fast-1000
+Speed:
+  MIXED: bw=3756MiB/s (3938MB/s), 3756MiB/s-3756MiB/s (3938MB/s-3938MB/s), io=1600MiB (1678MB), run=426-426msec
+
+ReadWrite (de)compression results for zstd-fast-1000
+Speed:
+  MIXED: bw=2165MiB/s (2270MB/s), 2165MiB/s-2165MiB/s (2270MB/s-2270MB/s), io=1600MiB (1678MB), run=739-739msec
+
+
+----
+
+
+
+
+“random Benchmark Results for off”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.11837 s, 472 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for off
+Speed:
+  MIXED: bw=369MiB/s (386MB/s), 369MiB/s-369MiB/s (386MB/s-386MB/s), io=1600MiB (1678MB), run=4341-4341msec
+
+Read (de)compression results for off
+Speed:
+  MIXED: bw=2119MiB/s (2222MB/s), 2119MiB/s-2119MiB/s (2222MB/s-2222MB/s), io=1600MiB (1678MB), run=755-755msec
+
+ReadWrite (de)compression results for off
+Speed:
+  MIXED: bw=1034MiB/s (1085MB/s), 1034MiB/s-1034MiB/s (1085MB/s-1085MB/s), io=1600MiB (1678MB), run=1547-1547msec
+
+
+----
+
+“random Benchmark Results for lz4”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.74899 s, 364 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.08x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for lz4
+Speed:
+  MIXED: bw=413MiB/s (433MB/s), 413MiB/s-413MiB/s (433MB/s-433MB/s), io=1600MiB (1678MB), run=3876-3876msec
+
+Read (de)compression results for lz4
+Speed:
+  MIXED: bw=2136MiB/s (2240MB/s), 2136MiB/s-2136MiB/s (2240MB/s-2240MB/s), io=1600MiB (1678MB), run=749-749msec
+
+ReadWrite (de)compression results for lz4
+Speed:
+  MIXED: bw=1391MiB/s (1459MB/s), 1391MiB/s-1391MiB/s (1459MB/s-1459MB/s), io=1600MiB (1678MB), run=1150-1150msec
+
+
+----
+
+“random Benchmark Results for zle”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.34245 s, 427 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zle
+Speed:
+  MIXED: bw=346MiB/s (363MB/s), 346MiB/s-346MiB/s (363MB/s-363MB/s), io=1600MiB (1678MB), run=4626-4626msec
+
+Read (de)compression results for zle
+Speed:
+  MIXED: bw=2114MiB/s (2216MB/s), 2114MiB/s-2114MiB/s (2216MB/s-2216MB/s), io=1600MiB (1678MB), run=757-757msec
+
+ReadWrite (de)compression results for zle
+Speed:
+  MIXED: bw=1001MiB/s (1049MB/s), 1001MiB/s-1001MiB/s (1049MB/s-1049MB/s), io=1600MiB (1678MB), run=1599-1599msec
+
+
+----
+
+“random Benchmark Results for lzjb”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 3.25696 s, 307 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.02x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for lzjb
+Speed:
+  MIXED: bw=302MiB/s (316MB/s), 302MiB/s-302MiB/s (316MB/s-316MB/s), io=1600MiB (1678MB), run=5302-5302msec
+
+Read (de)compression results for lzjb
+Speed:
+  MIXED: bw=2119MiB/s (2222MB/s), 2119MiB/s-2119MiB/s (2222MB/s-2222MB/s), io=1600MiB (1678MB), run=755-755msec
+
+ReadWrite (de)compression results for lzjb
+Speed:
+  MIXED: bw=902MiB/s (946MB/s), 902MiB/s-902MiB/s (946MB/s-946MB/s), io=1600MiB (1678MB), run=1774-1774msec
+
+
+----
+
+“random Benchmark Results for gzip”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 9.60324 s, 104 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.98x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for gzip
+Speed:
+  MIXED: bw=175MiB/s (184MB/s), 175MiB/s-175MiB/s (184MB/s-184MB/s), io=1600MiB (1678MB), run=9139-9139msec
+
+Read (de)compression results for gzip
+Speed:
+  MIXED: bw=931MiB/s (977MB/s), 931MiB/s-931MiB/s (977MB/s-977MB/s), io=1600MiB (1678MB), run=1718-1718msec
+
+ReadWrite (de)compression results for gzip
+Speed:
+  MIXED: bw=594MiB/s (623MB/s), 594MiB/s-594MiB/s (623MB/s-623MB/s), io=1600MiB (1678MB), run=2692-2692msec
+
+
+----
+
+“random Benchmark Results for gzip-1”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 6.77924 s, 148 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.82x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for gzip-1
+Speed:
+  MIXED: bw=210MiB/s (220MB/s), 210MiB/s-210MiB/s (220MB/s-220MB/s), io=1600MiB (1678MB), run=7617-7617msec
+
+Read (de)compression results for gzip-1
+Speed:
+  MIXED: bw=966MiB/s (1013MB/s), 966MiB/s-966MiB/s (1013MB/s-1013MB/s), io=1600MiB (1678MB), run=1657-1657msec
+
+ReadWrite (de)compression results for gzip-1
+Speed:
+  MIXED: bw=678MiB/s (711MB/s), 678MiB/s-678MiB/s (711MB/s-711MB/s), io=1600MiB (1678MB), run=2360-2360msec
+
+
+----
+
+“random Benchmark Results for gzip-2”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 6.9441 s, 144 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.89x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for gzip-2
+Speed:
+  MIXED: bw=205MiB/s (215MB/s), 205MiB/s-205MiB/s (215MB/s-215MB/s), io=1600MiB (1678MB), run=7803-7803msec
+
+Read (de)compression results for gzip-2
+Speed:
+  MIXED: bw=971MiB/s (1019MB/s), 971MiB/s-971MiB/s (1019MB/s-1019MB/s), io=1600MiB (1678MB), run=1647-1647msec
+
+ReadWrite (de)compression results for gzip-2
+Speed:
+  MIXED: bw=695MiB/s (729MB/s), 695MiB/s-695MiB/s (729MB/s-729MB/s), io=1600MiB (1678MB), run=2301-2301msec
+
+
+----
+
+“random Benchmark Results for gzip-3”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 7.12576 s, 140 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.92x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for gzip-3
+Speed:
+  MIXED: bw=203MiB/s (212MB/s), 203MiB/s-203MiB/s (212MB/s-212MB/s), io=1600MiB (1678MB), run=7901-7901msec
+
+Read (de)compression results for gzip-3
+Speed:
+  MIXED: bw=955MiB/s (1002MB/s), 955MiB/s-955MiB/s (1002MB/s-1002MB/s), io=1600MiB (1678MB), run=1675-1675msec
+
+ReadWrite (de)compression results for gzip-3
+Speed:
+  MIXED: bw=681MiB/s (714MB/s), 681MiB/s-681MiB/s (714MB/s-714MB/s), io=1600MiB (1678MB), run=2349-2349msec
+
+
+----
+
+“random Benchmark Results for gzip-4”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 8.34782 s, 120 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.97x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for gzip-4
+Speed:
+  MIXED: bw=176MiB/s (185MB/s), 176MiB/s-176MiB/s (185MB/s-185MB/s), io=1600MiB (1678MB), run=9088-9088msec
+
+Read (de)compression results for gzip-4
+Speed:
+  MIXED: bw=946MiB/s (992MB/s), 946MiB/s-946MiB/s (992MB/s-992MB/s), io=1600MiB (1678MB), run=1692-1692msec
+
+ReadWrite (de)compression results for gzip-4
+Speed:
+  MIXED: bw=618MiB/s (648MB/s), 618MiB/s-618MiB/s (648MB/s-648MB/s), io=1600MiB (1678MB), run=2588-2588msec
+
+
+----
+
+“random Benchmark Results for gzip-5”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 9.74255 s, 103 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.98x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for gzip-5
+Speed:
+  MIXED: bw=177MiB/s (186MB/s), 177MiB/s-177MiB/s (186MB/s-186MB/s), io=1600MiB (1678MB), run=9044-9044msec
+
+Read (de)compression results for gzip-5
+Speed:
+  MIXED: bw=944MiB/s (990MB/s), 944MiB/s-944MiB/s (990MB/s-990MB/s), io=1600MiB (1678MB), run=1695-1695msec
+
+ReadWrite (de)compression results for gzip-5
+Speed:
+  MIXED: bw=602MiB/s (631MB/s), 602MiB/s-602MiB/s (631MB/s-631MB/s), io=1600MiB (1678MB), run=2659-2659msec
+
+
+----
+
+“random Benchmark Results for gzip-6”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 9.92405 s, 101 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.98x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for gzip-6
+Speed:
+  MIXED: bw=175MiB/s (184MB/s), 175MiB/s-175MiB/s (184MB/s-184MB/s), io=1600MiB (1678MB), run=9131-9131msec
+
+Read (de)compression results for gzip-6
+Speed:
+  MIXED: bw=938MiB/s (983MB/s), 938MiB/s-938MiB/s (983MB/s-983MB/s), io=1600MiB (1678MB), run=1706-1706msec
+
+ReadWrite (de)compression results for gzip-6
+Speed:
+  MIXED: bw=607MiB/s (637MB/s), 607MiB/s-607MiB/s (637MB/s-637MB/s), io=1600MiB (1678MB), run=2634-2634msec
+
+
+----
+
+“random Benchmark Results for gzip-7”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 10.0609 s, 99.4 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.98x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for gzip-7
+Speed:
+  MIXED: bw=173MiB/s (182MB/s), 173MiB/s-173MiB/s (182MB/s-182MB/s), io=1600MiB (1678MB), run=9241-9241msec
+
+Read (de)compression results for gzip-7
+Speed:
+  MIXED: bw=952MiB/s (999MB/s), 952MiB/s-952MiB/s (999MB/s-999MB/s), io=1600MiB (1678MB), run=1680-1680msec
+
+ReadWrite (de)compression results for gzip-7
+Speed:
+  MIXED: bw=609MiB/s (638MB/s), 609MiB/s-609MiB/s (638MB/s-638MB/s), io=1600MiB (1678MB), run=2629-2629msec
+
+
+----
+
+“random Benchmark Results for gzip-8”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 10.1577 s, 98.4 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.98x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for gzip-8
+Speed:
+  MIXED: bw=173MiB/s (182MB/s), 173MiB/s-173MiB/s (182MB/s-182MB/s), io=1600MiB (1678MB), run=9227-9227msec
+
+Read (de)compression results for gzip-8
+Speed:
+  MIXED: bw=905MiB/s (949MB/s), 905MiB/s-905MiB/s (949MB/s-949MB/s), io=1600MiB (1678MB), run=1767-1767msec
+
+ReadWrite (de)compression results for gzip-8
+Speed:
+  MIXED: bw=634MiB/s (665MB/s), 634MiB/s-634MiB/s (665MB/s-665MB/s), io=1600MiB (1678MB), run=2524-2524msec
+
+
+----
+
+“random Benchmark Results for gzip-9”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 9.99337 s, 100 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.98x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for gzip-9
+Speed:
+  MIXED: bw=170MiB/s (178MB/s), 170MiB/s-170MiB/s (178MB/s-178MB/s), io=1600MiB (1678MB), run=9425-9425msec
+
+Read (de)compression results for gzip-9
+Speed:
+  MIXED: bw=932MiB/s (978MB/s), 932MiB/s-932MiB/s (978MB/s-978MB/s), io=1600MiB (1678MB), run=1716-1716msec
+
+ReadWrite (de)compression results for gzip-9
+Speed:
+  MIXED: bw=613MiB/s (643MB/s), 613MiB/s-613MiB/s (643MB/s-643MB/s), io=1600MiB (1678MB), run=2610-2610msec
+
+
+----
+
+“random Benchmark Results for zstd”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 4.29022 s, 233 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.94x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd
+Speed:
+  MIXED: bw=317MiB/s (333MB/s), 317MiB/s-317MiB/s (333MB/s-333MB/s), io=1600MiB (1678MB), run=5043-5043msec
+
+Read (de)compression results for zstd
+Speed:
+  MIXED: bw=1758MiB/s (1844MB/s), 1758MiB/s-1758MiB/s (1844MB/s-1844MB/s), io=1600MiB (1678MB), run=910-910msec
+
+ReadWrite (de)compression results for zstd
+Speed:
+  MIXED: bw=1077MiB/s (1129MB/s), 1077MiB/s-1077MiB/s (1129MB/s-1129MB/s), io=1600MiB (1678MB), run=1486-1486msec
+
+
+----
+
+“random Benchmark Results for zstd-1”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 3.65856 s, 273 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.90x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-1
+Speed:
+  MIXED: bw=330MiB/s (346MB/s), 330MiB/s-330MiB/s (346MB/s-346MB/s), io=1600MiB (1678MB), run=4853-4853msec
+
+Read (de)compression results for zstd-1
+Speed:
+  MIXED: bw=1820MiB/s (1909MB/s), 1820MiB/s-1820MiB/s (1909MB/s-1909MB/s), io=1600MiB (1678MB), run=879-879msec
+
+ReadWrite (de)compression results for zstd-1
+Speed:
+  MIXED: bw=1170MiB/s (1226MB/s), 1170MiB/s-1170MiB/s (1226MB/s-1226MB/s), io=1600MiB (1678MB), run=1368-1368msec
+
+
+----
+
+“random Benchmark Results for zstd-2”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 3.68412 s, 271 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.91x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-2
+Speed:
+  MIXED: bw=328MiB/s (344MB/s), 328MiB/s-328MiB/s (344MB/s-344MB/s), io=1600MiB (1678MB), run=4871-4871msec
+
+Read (de)compression results for zstd-2
+Speed:
+  MIXED: bw=1826MiB/s (1915MB/s), 1826MiB/s-1826MiB/s (1915MB/s-1915MB/s), io=1600MiB (1678MB), run=876-876msec
+
+ReadWrite (de)compression results for zstd-2
+Speed:
+  MIXED: bw=1182MiB/s (1239MB/s), 1182MiB/s-1182MiB/s (1239MB/s-1239MB/s), io=1600MiB (1678MB), run=1354-1354msec
+
+
+----
+
+“random Benchmark Results for zstd-3”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 4.33734 s, 231 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.94x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-3
+Speed:
+  MIXED: bw=323MiB/s (339MB/s), 323MiB/s-323MiB/s (339MB/s-339MB/s), io=1600MiB (1678MB), run=4947-4947msec
+
+Read (de)compression results for zstd-3
+Speed:
+  MIXED: bw=1756MiB/s (1842MB/s), 1756MiB/s-1756MiB/s (1842MB/s-1842MB/s), io=1600MiB (1678MB), run=911-911msec
+
+ReadWrite (de)compression results for zstd-3
+Speed:
+  MIXED: bw=1118MiB/s (1172MB/s), 1118MiB/s-1118MiB/s (1172MB/s-1172MB/s), io=1600MiB (1678MB), run=1431-1431msec
+
+
+----
+
+“random Benchmark Results for zstd-4”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 5.61766 s, 178 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.97x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-4
+Speed:
+  MIXED: bw=286MiB/s (300MB/s), 286MiB/s-286MiB/s (300MB/s-300MB/s), io=1600MiB (1678MB), run=5599-5599msec
+
+Read (de)compression results for zstd-4
+Speed:
+  MIXED: bw=1816MiB/s (1904MB/s), 1816MiB/s-1816MiB/s (1904MB/s-1904MB/s), io=1600MiB (1678MB), run=881-881msec
+
+ReadWrite (de)compression results for zstd-4
+Speed:
+  MIXED: bw=1016MiB/s (1065MB/s), 1016MiB/s-1016MiB/s (1065MB/s-1065MB/s), io=1600MiB (1678MB), run=1575-1575msec
+
+
+----
+
+“random Benchmark Results for zstd-5”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 6.64714 s, 150 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.97x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-5
+Speed:
+  MIXED: bw=281MiB/s (295MB/s), 281MiB/s-281MiB/s (295MB/s-295MB/s), io=1600MiB (1678MB), run=5688-5688msec
+
+Read (de)compression results for zstd-5
+Speed:
+  MIXED: bw=1850MiB/s (1940MB/s), 1850MiB/s-1850MiB/s (1940MB/s-1940MB/s), io=1600MiB (1678MB), run=865-865msec
+
+ReadWrite (de)compression results for zstd-5
+Speed:
+  MIXED: bw=1011MiB/s (1061MB/s), 1011MiB/s-1011MiB/s (1061MB/s-1061MB/s), io=1600MiB (1678MB), run=1582-1582msec
+
+
+----
+
+“random Benchmark Results for zstd-6”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 7.49662 s, 133 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.98x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-6
+Speed:
+  MIXED: bw=273MiB/s (286MB/s), 273MiB/s-273MiB/s (286MB/s-286MB/s), io=1600MiB (1678MB), run=5868-5868msec
+
+Read (de)compression results for zstd-6
+Speed:
+  MIXED: bw=1843MiB/s (1933MB/s), 1843MiB/s-1843MiB/s (1933MB/s-1933MB/s), io=1600MiB (1678MB), run=868-868msec
+
+ReadWrite (de)compression results for zstd-6
+Speed:
+  MIXED: bw=1011MiB/s (1061MB/s), 1011MiB/s-1011MiB/s (1061MB/s-1061MB/s), io=1600MiB (1678MB), run=1582-1582msec
+
+
+----
+
+“random Benchmark Results for zstd-7”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 7.9061 s, 126 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.98x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-7
+Speed:
+  MIXED: bw=276MiB/s (290MB/s), 276MiB/s-276MiB/s (290MB/s-290MB/s), io=1600MiB (1678MB), run=5790-5790msec
+
+Read (de)compression results for zstd-7
+Speed:
+  MIXED: bw=1818MiB/s (1907MB/s), 1818MiB/s-1818MiB/s (1907MB/s-1907MB/s), io=1600MiB (1678MB), run=880-880msec
+
+ReadWrite (de)compression results for zstd-7
+Speed:
+  MIXED: bw=1030MiB/s (1080MB/s), 1030MiB/s-1030MiB/s (1080MB/s-1080MB/s), io=1600MiB (1678MB), run=1554-1554msec
+
+
+----
+
+“random Benchmark Results for zstd-8”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 7.93589 s, 126 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.98x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-8
+Speed:
+  MIXED: bw=274MiB/s (287MB/s), 274MiB/s-274MiB/s (287MB/s-287MB/s), io=1600MiB (1678MB), run=5850-5850msec
+
+Read (de)compression results for zstd-8
+Speed:
+  MIXED: bw=1865MiB/s (1955MB/s), 1865MiB/s-1865MiB/s (1955MB/s-1955MB/s), io=1600MiB (1678MB), run=858-858msec
+
+ReadWrite (de)compression results for zstd-8
+Speed:
+  MIXED: bw=981MiB/s (1029MB/s), 981MiB/s-981MiB/s (1029MB/s-1029MB/s), io=1600MiB (1678MB), run=1631-1631msec
+
+
+----
+
+“random Benchmark Results for zstd-9”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 13.1027 s, 76.3 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.98x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-9
+Speed:
+  MIXED: bw=261MiB/s (273MB/s), 261MiB/s-261MiB/s (273MB/s-273MB/s), io=1600MiB (1678MB), run=6137-6137msec
+
+Read (de)compression results for zstd-9
+Speed:
+  MIXED: bw=1839MiB/s (1928MB/s), 1839MiB/s-1839MiB/s (1928MB/s-1928MB/s), io=1600MiB (1678MB), run=870-870msec
+
+ReadWrite (de)compression results for zstd-9
+Speed:
+  MIXED: bw=976MiB/s (1023MB/s), 976MiB/s-976MiB/s (1023MB/s-1023MB/s), io=1600MiB (1678MB), run=1640-1640msec
+
+
+----
+
+“random Benchmark Results for zstd-10”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 13.2813 s, 75.3 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.98x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-10
+Speed:
+  MIXED: bw=262MiB/s (274MB/s), 262MiB/s-262MiB/s (274MB/s-274MB/s), io=1600MiB (1678MB), run=6114-6114msec
+
+Read (de)compression results for zstd-10
+Speed:
+  MIXED: bw=1835MiB/s (1924MB/s), 1835MiB/s-1835MiB/s (1924MB/s-1924MB/s), io=1600MiB (1678MB), run=872-872msec
+
+ReadWrite (de)compression results for zstd-10
+Speed:
+  MIXED: bw=948MiB/s (995MB/s), 948MiB/s-948MiB/s (995MB/s-995MB/s), io=1600MiB (1678MB), run=1687-1687msec
+
+
+----
+
+“random Benchmark Results for zstd-11”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 21.1445 s, 47.3 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.98x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-11
+Speed:
+  MIXED: bw=191MiB/s (200MB/s), 191MiB/s-191MiB/s (200MB/s-200MB/s), io=1600MiB (1678MB), run=8383-8383msec
+
+Read (de)compression results for zstd-11
+Speed:
+  MIXED: bw=1850MiB/s (1940MB/s), 1850MiB/s-1850MiB/s (1940MB/s-1940MB/s), io=1600MiB (1678MB), run=865-865msec
+
+ReadWrite (de)compression results for zstd-11
+Speed:
+  MIXED: bw=605MiB/s (635MB/s), 605MiB/s-605MiB/s (635MB/s-635MB/s), io=1600MiB (1678MB), run=2644-2644msec
+
+
+----
+
+“random Benchmark Results for zstd-12”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 28.213 s, 35.4 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.98x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-12
+Speed:
+  MIXED: bw=158MiB/s (165MB/s), 158MiB/s-158MiB/s (165MB/s-165MB/s), io=1596MiB (1674MB), run=10132-10132msec
+
+Read (de)compression results for zstd-12
+Speed:
+  MIXED: bw=1860MiB/s (1951MB/s), 1860MiB/s-1860MiB/s (1951MB/s-1951MB/s), io=1600MiB (1678MB), run=860-860msec
+
+ReadWrite (de)compression results for zstd-12
+Speed:
+  MIXED: bw=465MiB/s (487MB/s), 465MiB/s-465MiB/s (487MB/s-487MB/s), io=1600MiB (1678MB), run=3442-3442msec
+
+
+----
+
+“random Benchmark Results for zstd-13”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 33.0455 s, 30.3 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.98x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-13
+Speed:
+  MIXED: bw=157MiB/s (165MB/s), 157MiB/s-157MiB/s (165MB/s-165MB/s), io=1596MiB (1673MB), run=10132-10132msec
+
+Read (de)compression results for zstd-13
+Speed:
+  MIXED: bw=1843MiB/s (1933MB/s), 1843MiB/s-1843MiB/s (1933MB/s-1933MB/s), io=1600MiB (1678MB), run=868-868msec
+
+ReadWrite (de)compression results for zstd-13
+Speed:
+  MIXED: bw=457MiB/s (479MB/s), 457MiB/s-457MiB/s (479MB/s-479MB/s), io=1600MiB (1678MB), run=3500-3500msec
+
+
+----
+
+“random Benchmark Results for zstd-14”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 39.0406 s, 25.6 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.98x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-14
+Speed:
+  MIXED: bw=161MiB/s (169MB/s), 161MiB/s-161MiB/s (169MB/s-169MB/s), io=1600MiB (1678MB), run=9940-9940msec
+
+Read (de)compression results for zstd-14
+Speed:
+  MIXED: bw=1822MiB/s (1911MB/s), 1822MiB/s-1822MiB/s (1911MB/s-1911MB/s), io=1600MiB (1678MB), run=878-878msec
+
+ReadWrite (de)compression results for zstd-14
+Speed:
+  MIXED: bw=449MiB/s (471MB/s), 449MiB/s-449MiB/s (471MB/s-471MB/s), io=1600MiB (1678MB), run=3561-3561msec
+
+
+----
+
+“random Benchmark Results for zstd-15”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 41.4055 s, 24.2 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.98x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-15
+Speed:
+  MIXED: bw=161MiB/s (169MB/s), 161MiB/s-161MiB/s (169MB/s-169MB/s), io=1600MiB (1678MB), run=9951-9951msec
+
+Read (de)compression results for zstd-15
+Speed:
+  MIXED: bw=1843MiB/s (1933MB/s), 1843MiB/s-1843MiB/s (1933MB/s-1933MB/s), io=1600MiB (1678MB), run=868-868msec
+
+ReadWrite (de)compression results for zstd-15
+Speed:
+  MIXED: bw=443MiB/s (465MB/s), 443MiB/s-443MiB/s (465MB/s-465MB/s), io=1600MiB (1678MB), run=3608-3608msec
+
+
+----
+
+“random Benchmark Results for zstd-16”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 74.5953 s, 13.4 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.98x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-16
+Speed:
+  MIXED: bw=103MiB/s (108MB/s), 103MiB/s-103MiB/s (108MB/s-108MB/s), io=1045MiB (1096MB), run=10196-10196msec
+
+Read (de)compression results for zstd-16
+Speed:
+  MIXED: bw=1848MiB/s (1937MB/s), 1848MiB/s-1848MiB/s (1937MB/s-1937MB/s), io=1600MiB (1678MB), run=866-866msec
+
+ReadWrite (de)compression results for zstd-16
+Speed:
+  MIXED: bw=248MiB/s (260MB/s), 248MiB/s-248MiB/s (260MB/s-260MB/s), io=1600MiB (1678MB), run=6456-6456msec
+
+
+----
+
+“random Benchmark Results for zstd-17”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 85.7002 s, 11.7 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.98x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-17
+Speed:
+  MIXED: bw=104MiB/s (109MB/s), 104MiB/s-104MiB/s (109MB/s-109MB/s), io=1058MiB (1109MB), run=10161-10161msec
+
+Read (de)compression results for zstd-17
+Speed:
+  MIXED: bw=1776MiB/s (1862MB/s), 1776MiB/s-1776MiB/s (1862MB/s-1862MB/s), io=1600MiB (1678MB), run=901-901msec
+
+ReadWrite (de)compression results for zstd-17
+Speed:
+  MIXED: bw=249MiB/s (261MB/s), 249MiB/s-249MiB/s (261MB/s-261MB/s), io=1600MiB (1678MB), run=6434-6434msec
+
+
+----
+
+“random Benchmark Results for zstd-18”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 86.1912 s, 11.6 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.98x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-18
+Speed:
+  MIXED: bw=102MiB/s (107MB/s), 102MiB/s-102MiB/s (107MB/s-107MB/s), io=1030MiB (1080MB), run=10110-10110msec
+
+Read (de)compression results for zstd-18
+Speed:
+  MIXED: bw=1810MiB/s (1898MB/s), 1810MiB/s-1810MiB/s (1898MB/s-1898MB/s), io=1600MiB (1678MB), run=884-884msec
+
+ReadWrite (de)compression results for zstd-18
+Speed:
+  MIXED: bw=242MiB/s (253MB/s), 242MiB/s-242MiB/s (253MB/s-253MB/s), io=1600MiB (1678MB), run=6621-6621msec
+
+
+----
+
+“random Benchmark Results for zstd-19”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 86.7569 s, 11.5 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.98x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-19
+Speed:
+  MIXED: bw=103MiB/s (107MB/s), 103MiB/s-103MiB/s (107MB/s-107MB/s), io=1052MiB (1103MB), run=10263-10263msec
+
+Read (de)compression results for zstd-19
+Speed:
+  MIXED: bw=1818MiB/s (1907MB/s), 1818MiB/s-1818MiB/s (1907MB/s-1907MB/s), io=1600MiB (1678MB), run=880-880msec
+
+ReadWrite (de)compression results for zstd-19
+Speed:
+  MIXED: bw=254MiB/s (266MB/s), 254MiB/s-254MiB/s (266MB/s-266MB/s), io=1600MiB (1678MB), run=6310-6310msec
+
+
+----
+
+“random Benchmark Results for zstd-fast”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 3.41258 s, 293 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.12x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast
+Speed:
+  MIXED: bw=384MiB/s (402MB/s), 384MiB/s-384MiB/s (402MB/s-402MB/s), io=1600MiB (1678MB), run=4172-4172msec
+
+Read (de)compression results for zstd-fast
+Speed:
+  MIXED: bw=1816MiB/s (1904MB/s), 1816MiB/s-1816MiB/s (1904MB/s-1904MB/s), io=1600MiB (1678MB), run=881-881msec
+
+ReadWrite (de)compression results for zstd-fast
+Speed:
+  MIXED: bw=1301MiB/s (1364MB/s), 1301MiB/s-1301MiB/s (1364MB/s-1364MB/s), io=1600MiB (1678MB), run=1230-1230msec
+
+
+----
+
+“random Benchmark Results for zstd-fast-1”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 3.46115 s, 289 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.12x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-1
+Speed:
+  MIXED: bw=385MiB/s (403MB/s), 385MiB/s-385MiB/s (403MB/s-403MB/s), io=1600MiB (1678MB), run=4158-4158msec
+
+Read (de)compression results for zstd-fast-1
+Speed:
+  MIXED: bw=1806MiB/s (1894MB/s), 1806MiB/s-1806MiB/s (1894MB/s-1894MB/s), io=1600MiB (1678MB), run=886-886msec
+
+ReadWrite (de)compression results for zstd-fast-1
+Speed:
+  MIXED: bw=1293MiB/s (1356MB/s), 1293MiB/s-1293MiB/s (1356MB/s-1356MB/s), io=1600MiB (1678MB), run=1237-1237msec
+
+
+----
+
+“random Benchmark Results for zstd-fast-2”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 3.13674 s, 319 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.11x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-2
+Speed:
+  MIXED: bw=383MiB/s (401MB/s), 383MiB/s-383MiB/s (401MB/s-401MB/s), io=1600MiB (1678MB), run=4182-4182msec
+
+Read (de)compression results for zstd-fast-2
+Speed:
+  MIXED: bw=1831MiB/s (1920MB/s), 1831MiB/s-1831MiB/s (1920MB/s-1920MB/s), io=1600MiB (1678MB), run=874-874msec
+
+ReadWrite (de)compression results for zstd-fast-2
+Speed:
+  MIXED: bw=1303MiB/s (1366MB/s), 1303MiB/s-1303MiB/s (1366MB/s-1366MB/s), io=1600MiB (1678MB), run=1228-1228msec
+
+
+----
+
+“random Benchmark Results for zstd-fast-3”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 3.09251 s, 323 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.09x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-3
+Speed:
+  MIXED: bw=386MiB/s (404MB/s), 386MiB/s-386MiB/s (404MB/s-404MB/s), io=1600MiB (1678MB), run=4148-4148msec
+
+Read (de)compression results for zstd-fast-3
+Speed:
+  MIXED: bw=1794MiB/s (1881MB/s), 1794MiB/s-1794MiB/s (1881MB/s-1881MB/s), io=1600MiB (1678MB), run=892-892msec
+
+ReadWrite (de)compression results for zstd-fast-3
+Speed:
+  MIXED: bw=1293MiB/s (1356MB/s), 1293MiB/s-1293MiB/s (1356MB/s-1356MB/s), io=1600MiB (1678MB), run=1237-1237msec
+
+
+----
+
+“random Benchmark Results for zstd-fast-4”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.98579 s, 335 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.08x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-4
+Speed:
+  MIXED: bw=386MiB/s (405MB/s), 386MiB/s-386MiB/s (405MB/s-405MB/s), io=1600MiB (1678MB), run=4143-4143msec
+
+Read (de)compression results for zstd-fast-4
+Speed:
+  MIXED: bw=1822MiB/s (1911MB/s), 1822MiB/s-1822MiB/s (1911MB/s-1911MB/s), io=1600MiB (1678MB), run=878-878msec
+
+ReadWrite (de)compression results for zstd-fast-4
+Speed:
+  MIXED: bw=1290MiB/s (1353MB/s), 1290MiB/s-1290MiB/s (1353MB/s-1353MB/s), io=1600MiB (1678MB), run=1240-1240msec
+
+
+----
+
+“random Benchmark Results for zstd-fast-5”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.89921 s, 345 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.07x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-5
+Speed:
+  MIXED: bw=388MiB/s (407MB/s), 388MiB/s-388MiB/s (407MB/s-407MB/s), io=1600MiB (1678MB), run=4119-4119msec
+
+Read (de)compression results for zstd-fast-5
+Speed:
+  MIXED: bw=1802MiB/s (1889MB/s), 1802MiB/s-1802MiB/s (1889MB/s-1889MB/s), io=1600MiB (1678MB), run=888-888msec
+
+ReadWrite (de)compression results for zstd-fast-5
+Speed:
+  MIXED: bw=1300MiB/s (1363MB/s), 1300MiB/s-1300MiB/s (1363MB/s-1363MB/s), io=1600MiB (1678MB), run=1231-1231msec
+
+
+----
+
+“random Benchmark Results for zstd-fast-6”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.83989 s, 352 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.06x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-6
+Speed:
+  MIXED: bw=392MiB/s (411MB/s), 392MiB/s-392MiB/s (411MB/s-411MB/s), io=1600MiB (1678MB), run=4084-4084msec
+
+Read (de)compression results for zstd-fast-6
+Speed:
+  MIXED: bw=1772MiB/s (1858MB/s), 1772MiB/s-1772MiB/s (1858MB/s-1858MB/s), io=1600MiB (1678MB), run=903-903msec
+
+ReadWrite (de)compression results for zstd-fast-6
+Speed:
+  MIXED: bw=1284MiB/s (1346MB/s), 1284MiB/s-1284MiB/s (1346MB/s-1346MB/s), io=1600MiB (1678MB), run=1246-1246msec
+
+
+----
+
+“random Benchmark Results for zstd-fast-7”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.79245 s, 358 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.05x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-7
+Speed:
+  MIXED: bw=388MiB/s (407MB/s), 388MiB/s-388MiB/s (407MB/s-407MB/s), io=1600MiB (1678MB), run=4121-4121msec
+
+Read (de)compression results for zstd-fast-7
+Speed:
+  MIXED: bw=1790MiB/s (1877MB/s), 1790MiB/s-1790MiB/s (1877MB/s-1877MB/s), io=1600MiB (1678MB), run=894-894msec
+
+ReadWrite (de)compression results for zstd-fast-7
+Speed:
+  MIXED: bw=1302MiB/s (1365MB/s), 1302MiB/s-1302MiB/s (1365MB/s-1365MB/s), io=1600MiB (1678MB), run=1229-1229msec
+
+
+----
+
+“random Benchmark Results for zstd-fast-8”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.73894 s, 365 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.04x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-8
+Speed:
+  MIXED: bw=385MiB/s (404MB/s), 385MiB/s-385MiB/s (404MB/s-404MB/s), io=1600MiB (1678MB), run=4153-4153msec
+
+Read (de)compression results for zstd-fast-8
+Speed:
+  MIXED: bw=1865MiB/s (1955MB/s), 1865MiB/s-1865MiB/s (1955MB/s-1955MB/s), io=1600MiB (1678MB), run=858-858msec
+
+ReadWrite (de)compression results for zstd-fast-8
+Speed:
+  MIXED: bw=1333MiB/s (1398MB/s), 1333MiB/s-1333MiB/s (1398MB/s-1398MB/s), io=1600MiB (1678MB), run=1200-1200msec
+
+
+----
+
+“random Benchmark Results for zstd-fast-9”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.72625 s, 367 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.03x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-9
+Speed:
+  MIXED: bw=387MiB/s (406MB/s), 387MiB/s-387MiB/s (406MB/s-406MB/s), io=1600MiB (1678MB), run=4135-4135msec
+
+Read (de)compression results for zstd-fast-9
+Speed:
+  MIXED: bw=1802MiB/s (1889MB/s), 1802MiB/s-1802MiB/s (1889MB/s-1889MB/s), io=1600MiB (1678MB), run=888-888msec
+
+ReadWrite (de)compression results for zstd-fast-9
+Speed:
+  MIXED: bw=1318MiB/s (1382MB/s), 1318MiB/s-1318MiB/s (1382MB/s-1382MB/s), io=1600MiB (1678MB), run=1214-1214msec
+
+
+----
+
+“random Benchmark Results for zstd-fast-10”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.63204 s, 380 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.02x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-10
+Speed:
+  MIXED: bw=390MiB/s (409MB/s), 390MiB/s-390MiB/s (409MB/s-409MB/s), io=1600MiB (1678MB), run=4098-4098msec
+
+Read (de)compression results for zstd-fast-10
+Speed:
+  MIXED: bw=1800MiB/s (1887MB/s), 1800MiB/s-1800MiB/s (1887MB/s-1887MB/s), io=1600MiB (1678MB), run=889-889msec
+
+ReadWrite (de)compression results for zstd-fast-10
+Speed:
+  MIXED: bw=1268MiB/s (1329MB/s), 1268MiB/s-1268MiB/s (1329MB/s-1329MB/s), io=1600MiB (1678MB), run=1262-1262msec
+
+
+----
+
+“random Benchmark Results for zstd-fast-20”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.50711 s, 399 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-20
+Speed:
+  MIXED: bw=392MiB/s (411MB/s), 392MiB/s-392MiB/s (411MB/s-411MB/s), io=1600MiB (1678MB), run=4080-4080msec
+
+Read (de)compression results for zstd-fast-20
+Speed:
+  MIXED: bw=1824MiB/s (1913MB/s), 1824MiB/s-1824MiB/s (1913MB/s-1913MB/s), io=1600MiB (1678MB), run=877-877msec
+
+ReadWrite (de)compression results for zstd-fast-20
+Speed:
+  MIXED: bw=1355MiB/s (1421MB/s), 1355MiB/s-1355MiB/s (1421MB/s-1421MB/s), io=1600MiB (1678MB), run=1181-1181msec
+
+
+----
+
+“random Benchmark Results for zstd-fast-30”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.41609 s, 414 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-30
+Speed:
+  MIXED: bw=394MiB/s (413MB/s), 394MiB/s-394MiB/s (413MB/s-413MB/s), io=1600MiB (1678MB), run=4061-4061msec
+
+Read (de)compression results for zstd-fast-30
+Speed:
+  MIXED: bw=1806MiB/s (1894MB/s), 1806MiB/s-1806MiB/s (1894MB/s-1894MB/s), io=1600MiB (1678MB), run=886-886msec
+
+ReadWrite (de)compression results for zstd-fast-30
+Speed:
+  MIXED: bw=1332MiB/s (1397MB/s), 1332MiB/s-1332MiB/s (1397MB/s-1397MB/s), io=1600MiB (1678MB), run=1201-1201msec
+
+
+----
+
+“random Benchmark Results for zstd-fast-40”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.33916 s, 428 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-40
+Speed:
+  MIXED: bw=393MiB/s (412MB/s), 393MiB/s-393MiB/s (412MB/s-412MB/s), io=1600MiB (1678MB), run=4072-4072msec
+
+Read (de)compression results for zstd-fast-40
+Speed:
+  MIXED: bw=1810MiB/s (1898MB/s), 1810MiB/s-1810MiB/s (1898MB/s-1898MB/s), io=1600MiB (1678MB), run=884-884msec
+
+ReadWrite (de)compression results for zstd-fast-40
+Speed:
+  MIXED: bw=1343MiB/s (1409MB/s), 1343MiB/s-1343MiB/s (1409MB/s-1409MB/s), io=1600MiB (1678MB), run=1191-1191msec
+
+
+----
+
+“random Benchmark Results for zstd-fast-50”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.32643 s, 430 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-50
+Speed:
+  MIXED: bw=391MiB/s (410MB/s), 391MiB/s-391MiB/s (410MB/s-410MB/s), io=1600MiB (1678MB), run=4089-4089msec
+
+Read (de)compression results for zstd-fast-50
+Speed:
+  MIXED: bw=1826MiB/s (1915MB/s), 1826MiB/s-1826MiB/s (1915MB/s-1915MB/s), io=1600MiB (1678MB), run=876-876msec
+
+ReadWrite (de)compression results for zstd-fast-50
+Speed:
+  MIXED: bw=1321MiB/s (1385MB/s), 1321MiB/s-1321MiB/s (1385MB/s-1385MB/s), io=1600MiB (1678MB), run=1211-1211msec
+
+
+----
+
+“random Benchmark Results for zstd-fast-60”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.36642 s, 423 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-60
+Speed:
+  MIXED: bw=385MiB/s (404MB/s), 385MiB/s-385MiB/s (404MB/s-404MB/s), io=1600MiB (1678MB), run=4157-4157msec
+
+Read (de)compression results for zstd-fast-60
+Speed:
+  MIXED: bw=1810MiB/s (1898MB/s), 1810MiB/s-1810MiB/s (1898MB/s-1898MB/s), io=1600MiB (1678MB), run=884-884msec
+
+ReadWrite (de)compression results for zstd-fast-60
+Speed:
+  MIXED: bw=1357MiB/s (1423MB/s), 1357MiB/s-1357MiB/s (1423MB/s-1423MB/s), io=1600MiB (1678MB), run=1179-1179msec
+
+
+----
+
+“random Benchmark Results for zstd-fast-70”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.32826 s, 430 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-70
+Speed:
+  MIXED: bw=394MiB/s (413MB/s), 394MiB/s-394MiB/s (413MB/s-413MB/s), io=1600MiB (1678MB), run=4059-4059msec
+
+Read (de)compression results for zstd-fast-70
+Speed:
+  MIXED: bw=1804MiB/s (1891MB/s), 1804MiB/s-1804MiB/s (1891MB/s-1891MB/s), io=1600MiB (1678MB), run=887-887msec
+
+ReadWrite (de)compression results for zstd-fast-70
+Speed:
+  MIXED: bw=1305MiB/s (1368MB/s), 1305MiB/s-1305MiB/s (1368MB/s-1368MB/s), io=1600MiB (1678MB), run=1226-1226msec
+
+
+----
+
+“random Benchmark Results for zstd-fast-80”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.31817 s, 431 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-80
+Speed:
+  MIXED: bw=389MiB/s (408MB/s), 389MiB/s-389MiB/s (408MB/s-408MB/s), io=1600MiB (1678MB), run=4109-4109msec
+
+Read (de)compression results for zstd-fast-80
+Speed:
+  MIXED: bw=1749MiB/s (1834MB/s), 1749MiB/s-1749MiB/s (1834MB/s-1834MB/s), io=1600MiB (1678MB), run=915-915msec
+
+ReadWrite (de)compression results for zstd-fast-80
+Speed:
+  MIXED: bw=1330MiB/s (1395MB/s), 1330MiB/s-1330MiB/s (1395MB/s-1395MB/s), io=1600MiB (1678MB), run=1203-1203msec
+
+
+----
+
+“random Benchmark Results for zstd-fast-90”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.34173 s, 427 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-90
+Speed:
+  MIXED: bw=390MiB/s (409MB/s), 390MiB/s-390MiB/s (409MB/s-409MB/s), io=1600MiB (1678MB), run=4104-4104msec
+
+Read (de)compression results for zstd-fast-90
+Speed:
+  MIXED: bw=1829MiB/s (1917MB/s), 1829MiB/s-1829MiB/s (1917MB/s-1917MB/s), io=1600MiB (1678MB), run=875-875msec
+
+ReadWrite (de)compression results for zstd-fast-90
+Speed:
+  MIXED: bw=1172MiB/s (1229MB/s), 1172MiB/s-1172MiB/s (1229MB/s-1229MB/s), io=1600MiB (1678MB), run=1365-1365msec
+
+
+----
+
+“random Benchmark Results for zstd-fast-100”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.29237 s, 436 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-100
+Speed:
+  MIXED: bw=390MiB/s (409MB/s), 390MiB/s-390MiB/s (409MB/s-409MB/s), io=1600MiB (1678MB), run=4106-4106msec
+
+Read (de)compression results for zstd-fast-100
+Speed:
+  MIXED: bw=1848MiB/s (1937MB/s), 1848MiB/s-1848MiB/s (1937MB/s-1937MB/s), io=1600MiB (1678MB), run=866-866msec
+
+ReadWrite (de)compression results for zstd-fast-100
+Speed:
+  MIXED: bw=1173MiB/s (1230MB/s), 1173MiB/s-1173MiB/s (1230MB/s-1230MB/s), io=1600MiB (1678MB), run=1364-1364msec
+
+
+----
+
+“random Benchmark Results for zstd-fast-500”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.34822 s, 426 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-500
+Speed:
+  MIXED: bw=392MiB/s (411MB/s), 392MiB/s-392MiB/s (411MB/s-411MB/s), io=1600MiB (1678MB), run=4086-4086msec
+
+Read (de)compression results for zstd-fast-500
+Speed:
+  MIXED: bw=1816MiB/s (1904MB/s), 1816MiB/s-1816MiB/s (1904MB/s-1904MB/s), io=1600MiB (1678MB), run=881-881msec
+
+ReadWrite (de)compression results for zstd-fast-500
+Speed:
+  MIXED: bw=1132MiB/s (1187MB/s), 1132MiB/s-1132MiB/s (1187MB/s-1187MB/s), io=1600MiB (1678MB), run=1414-1414msec
+
+
+----
+
+“random Benchmark Results for zstd-fast-1000”
+1000000000 bytes (1.0 GB, 954 MiB) copied, 2.28636 s, 437 MB/s
+Compression Ratio:
+NAME          PROPERTY       VALUE  SOURCE
+testpool/fs1  compressratio  1.00x  -
+
+hashcheck result: enwik9: OK
+
+
+Write (de)compression results for zstd-fast-1000
+Speed:
+  MIXED: bw=394MiB/s (414MB/s), 394MiB/s-394MiB/s (414MB/s-414MB/s), io=1600MiB (1678MB), run=4057-4057msec
+
+Read (de)compression results for zstd-fast-1000
+Speed:
+  MIXED: bw=1818MiB/s (1907MB/s), 1818MiB/s-1818MiB/s (1907MB/s-1907MB/s), io=1600MiB (1678MB), run=880-880msec
+
+ReadWrite (de)compression results for zstd-fast-1000
+Speed:
+  MIXED: bw=1131MiB/s (1186MB/s), 1131MiB/s-1131MiB/s (1186MB/s-1186MB/s), io=1600MiB (1678MB), run=1415-1415msec
+
+
+----
+
+
+
+
